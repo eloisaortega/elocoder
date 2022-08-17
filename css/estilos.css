@@ -369,6 +369,10 @@ hr {
     font-size: 30px;
 }
 
+#footer .maps {
+    text-align: center;
+}
+
 .maps {
     display: block;
     margin-left: 40px;
