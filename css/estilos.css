@@ -237,6 +237,10 @@ a:hover .vertical {
     transform: scale(1);
 }
 
+.contendor-servi {
+    background: rgb(224, 218, 218);
+}
+
 .btn-mkt {
     color: ivory;
 }
