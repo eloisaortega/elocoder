@@ -507,16 +507,20 @@ hr {
 
 #services h2 {
     padding-bottom: 30px;
+    color: antiquewhite;
 }
 
 .servi-box {
     margin: 10px 10px;
     text-align: center;
     float: left;
-    width: 20%;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
     padding: 10px;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .servi-box img {
@@ -524,6 +528,12 @@ hr {
     padding-bottom: 30px;
     align-items: center;
     justify-content: center;
+    text-align: center;
+}
+
+.servi-box p {
+    color: ivory;
+    text-align: center;
 }
 
 #header-contact {
