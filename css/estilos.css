@@ -168,7 +168,7 @@ a:hover .vertical {
     text-align: center;
 }
 
-.btimpul:hover {
+#btimpul:hover {
     color: blueviolet;
 }
 
@@ -191,7 +191,7 @@ a:hover .vertical {
     background-color: #282d78;
 }
 
-.grid-layout {
+.display-serv {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -233,7 +233,7 @@ a:hover .vertical {
     font: bold;
 }
 
-.grid-layout:hover p {
+.display-serv:hover p {
     transform: scale(1);
 }
 
