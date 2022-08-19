@@ -179,6 +179,11 @@ a:hover .vertical {
     margin-bottom: 50px;
 }
 
+#services1 {
+    height: 70vh;
+    padding-top: 30px;
+}
+
 .contenedor {
     margin: auto;
     overflow: hidden;
@@ -224,10 +229,6 @@ a:hover .vertical {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-
-.serv-box p {
     text-align: center;
     color: rgb(226, 43, 134);
     font: bold;
@@ -285,28 +286,6 @@ hr {
     height: 100%;
     object-fit: cover;
     display: block;
-}
-
-.hover-galeria {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    transform: scale(0);
-    background: blueviolet;
-    transition: transform .5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.hover-galeria img {
-    width: 50px;
-}
-
-.imagen-port:hover .hover-galeria {
-    transform: scale(1);
 }
 
 .galeria-cli {
@@ -413,58 +392,35 @@ hr {
     text-decoration: none;
 }
 
-.contenedorform {
-    background-color: #282d78;
-    align-content: center;
-    text-align: center;
-    padding: 50px;
-    font-size: 30px;
-    color: ivory;
-}
-
-.form {
-    font-size: 1.5em;
-    font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 10px;
-    border: 1px solid hsla(0, 0%, 0%, 0.5);
-    background-color: linear-gradient( -225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
-    ;
-}
-
 .box ul li a {
     list-style-type: none;
     color: ivory;
     text-decoration: none;
 }
 
-.contenedorportf {
-    padding: 10px 0;
-    margin: auto;
-    overflow: hidden;
-    background-color: #282d78;
-    height: 100%;
-}
+
+/* portfolio.html */
 
 .contenedorportf {
-    width: 100%;
-    padding: 10px 0;
-    margin: auto;
+    padding: 10px;
+    margin: 0;
     overflow: hidden;
     background-color: #282d78;
+    min-height: calc(100vh 100px 300px);
+    justify-content: center;
 }
 
 .galeria-port1 {
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     background-color: #282d78;
+    min-height: calc(100vh 90px 300px);
 }
 
 .portfolio1 {
-    width: 24%;
+    width: 200px;
     margin-bottom: 10px;
-    height: 200px;
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -473,9 +429,9 @@ hr {
 
 .portfolio1>img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
-    display: block;
+    justify-content: center;
+    height: 100%;
 }
 
 .hover-port {
@@ -500,41 +456,48 @@ hr {
     transform: scale(1);
 }
 
-#services {
-    height: 70vh;
-    padding-top: 30px;
+
+/* servicios.html */
+
+.service-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #services h2 {
+    margin-top: 30px;
     padding-bottom: 30px;
     color: antiquewhite;
+}
+
+.height-main {
+    min-height: calc(100vh - 82px - 379px);
 }
 
 .servi-box {
     margin: 10px 10px;
     text-align: center;
-    float: left;
     width: 200px;
-    display: flex;
     flex-wrap: wrap;
     padding: 10px;
     align-items: center;
-    justify-content: center;
-    text-align: center;
 }
 
-.servi-box img {
+.servi-box>img {
     width: 100%;
-    padding-bottom: 30px;
-    align-items: center;
+    padding-bottom: 20px;
     justify-content: center;
-    text-align: center;
+    align-items: center;
 }
 
 .servi-box p {
     color: ivory;
-    text-align: center;
+    text-align: left;
 }
+
+
+/* formulario contacto.html */
 
 #header-contact {
     background: rgb(224, 218, 218);
@@ -726,9 +689,12 @@ hr {
     text-align: center;
 }
 
+
+/* media q. */
+
 @media screen and (min-width: 0px) and (max-width: 700px) {
-    header {
-        height: 100vh;
+    #header {
+        min-height: calc(100vh - 82px - 379px);
         width: 100%;
     }
     #header-contact {
@@ -788,6 +754,12 @@ hr {
         padding: 5px 5px;
         margin: 5px 5px;
     }
+    .height-main {
+        min-height: calc(100vh - 82px - 379px);
+    }
+    #services1 {
+        height: 100vh;
+    }
     .contenedor-footer {
         padding: 10px;
     }
@@ -825,12 +797,17 @@ hr {
 /* pantallas grandes */
 
 @media screen and (min-width: 701px) and (max-width: 1200px) {
+    #header1 {
+        min-height: calc(100vh - 82px - 379px);
+    }
     header {
-        height: 700px;
         width: 100%;
     }
     body {
         padding: 0;
+    }
+    .height-main {
+        min-height: calc(100vh - 82px - 379px);
     }
     .contact-wrapper {
         display: grid;
