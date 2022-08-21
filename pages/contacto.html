@@ -29,67 +29,64 @@
             </nav>
         </div>
         <hr>
-        <main id="contact">
-            <section class="contactar">
-                <div class="contenedorcont">
-                    <div class="cont">
-                        <h1 class="h-1" class="animate__animated animate__slideInRight">Combinamos diseño, pensamiento y creatividad.</h1><br>
-                        <h2 class="h-2">Enfocados a nuestros clientes</h2>
-                        <h2 class="h-2">Entregamos el 100% y brindamos una respuesta instantánea.</h2><br>
-                        <form action="#"><button><a class="btn-cont " href="https://www.whatsapp.com/">Contáctanos y conoce cómo trabajamos</a></button></form>
-                    </div>
+        <section class="contactar">
+            <div class="contenedorcont">
+                <div class="cont">
+                    <h1 class="h-1" class="animate__animated animate__slideInRight">Combinamos diseño, pensamiento y creatividad.</h1><br>
+                    <h2 class="h-2">Enfocados a nuestros clientes</h2>
+                    <h2 class="h-2">Entregamos el 100% y brindamos una respuesta instantánea.</h2><br>
+                    <form action="#"><button><a class="btn-cont " href="https://www.whatsapp.com/">Contáctanos y conoce cómo trabajamos</a></button></form>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
     </header>
     <hr>
-
-    <div class="contentw">
-        <div class="contact-wrapper">
-            <div class="contact-form">
-                <h1 class="h-cont">CONTÁCTANOS</h1><br>
-                <form action="enviar.php" method="POST" enctype="text/plain" netlify>
-                    <p>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" name="nombre">
-                    </p>
-                    <p>
-                        <label for="nombre">Apellido:</label>
-                        <input type="text" name="apellido">
-                    </p>
-                    <p>
-                        <label for="correo">Email:</label>
-                        <input type="email" name="correo">
-                    </p>
-                    <p>
-                        <label for="tel">Teléfono:</label>
-                        <input type="tel" name="tell">
-                    </p>
-                    <p class="block">
-                        <label for="file">Adjunta tu archivo:</label>
-                        <input type="file" name="file">
-                    </p>
-                    <p class="block">
-                        <label for="comentarios">Déjanos un mensaje:</label>
-                        <textarea name="comentarios" id="text-area" cols="30" rows="5"></textarea><br>
-                    </p>
-                    <p class="block">
-                        <button><input type="submit" value="ENVIAR"></button>
-                    </p>
-                </form>
-            </div>
-            <div class="contact-info">
-                <h4>Más Información</h4>
-                <ul>
-                    <li><i class="fa-solid fa-map-location-dot"></i>Ushuaia-TDF</li>
-                    <li><i class="fa-solid fa-phone"></i>+54 9 264-6614082</li>
-                    <li><i class="fa-solid fa-at"></i>info@mktleon.com</li>
-                </ul>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut non modi reiciendis ad laboriosam, sit veniam possimus.</p>
-                <p>MKTleon</p>
+    <main id="contact">
+        <div class="contentw">
+            <div class="contact-wrapper">
+                <div class="contact-form">
+                    <h1 class="h-cont">CONTÁCTANOS</h1><br>
+                    <form class="row" action="enviar.php" method="POST" enctype="text/plain" netlify>
+                        <div class="col-6">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre">
+                        </div>
+                        <div class="col-6">
+                            <label for="nombre">Apellido:</label>
+                            <input type="text" name="apellido">
+                        </div>
+                        <div class="col-6">
+                            <label for="correo">Email:</label>
+                            <input type="email" name="correo">
+                        </div>
+                        <div class="col-6">
+                            <label for="tel">Teléfono:</label>
+                            <input type="tel" name="tell">
+                        </div>
+                        <div class="col-12">
+                            <label for="file">Adjunta tu archivo:</label>
+                            <input type="file" name="file">
+                        </div>
+                        <div class="col-12">
+                            <label for="comentarios">Déjanos un mensaje:</label>
+                            <textarea name="comentarios" id="text-area" cols="30" rows="5"></textarea><br>
+                            <button class="btn-form"><input type="submit" value="ENVIAR"></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h4>Más Información</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-map-location-dot"></i>Ushuaia-TDF</li>
+                        <li><i class="fa-solid fa-phone"></i>+54 9 264-6614082</li>
+                        <li><i class="fa-solid fa-at"></i>info@mktleon.com</li>
+                    </ul>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut non modi reiciendis ad laboriosam, sit veniam possimus.</p>
+                    <p>MKTleon</p>
+                </div>
             </div>
         </div>
-    </div>
+    </main>
     <hr>
 
 
