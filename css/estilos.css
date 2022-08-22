@@ -428,25 +428,26 @@
             padding-bottom: 20px;
         }
         
-        .contenedor-fluid h1 {
+        .container-fluid h1 {
             color: #282d78;
         }
         
-        .contenedor-fluid .card-img-top {
+        .container-fluid .card-img-top {
             border-radius: 20px 20px 0px 0px;
             box-shadow: #282d78;
         }
         
-        .contenedor-fluid .card {
+        .container-fluid .card {
             border-radius: 20px;
             box-shadow: 0 0 20px #282d78;
         }
         
-        .contenedor-fluid {
+        .container-fluid {
             background: rgb(224, 218, 218);
             color: #282d78;
             padding-top: 20px;
             padding-bottom: 30px;
+            padding-left: 20px;
         }
         /* servicios.html */
         
@@ -924,5 +925,8 @@
             #footer ul li a {
                 margin-left: 40px;
                 margin-right: 40px;
+            }
+            .box .maps {
+                text-align: center;
             }
         }
