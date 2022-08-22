@@ -458,6 +458,15 @@
         .container-fluid .row {
             margin: 40px;
         }
+        
+        .be-h {
+            color: antiquewhite;
+            font-size: 20px;
+        }
+        
+        .be-h:hover {
+            color: #7369b5;
+        }
         /* servicios.html */
         
         .service-row {
