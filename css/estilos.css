@@ -410,65 +410,43 @@
         }
         /* portfolio.html */
         
-        .contenedor-portfolio1 h3 {
-            color: #282d78;
+        .contenedor-portfolio1 {
+            min-height: calc(100vh - 82px - 379px);
+            width: 100%;
+            padding: 10px 40px 40px 40px;
             background: rgb(224, 218, 218);
-            padding-top: 20px;
         }
         
-        .contenedorportf {
-            padding: 0;
+        .contenedor-port1 {
             margin: 0;
-            overflow: hidden;
-            min-height: calc(100vh 100px 300px);
-            justify-content: center;
-            background: rgb(224, 218, 218)
-        }
-        
-        .galeria-port1 {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
             background: rgb(224, 218, 218);
-            min-height: calc(100vh 90px 300px);
         }
         
-        .portfolio1 {
-            width: 200px;
-            margin-bottom: 10px;
-            overflow: hidden;
-            position: relative;
-            cursor: pointer;
-            box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+        .contenedor-port1 {
+            color: #282d78;
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
         
-        .portfolio1>img {
-            width: 100%;
-            object-fit: cover;
-            justify-content: center;
-            height: 100%;
+        .contenedor-fluid h1 {
+            color: #282d78;
         }
         
-        .hover-port {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            transform: scale(0);
-            background: rgb(183, 43, 226);
-            transition: transform .5s;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+        .contenedor-fluid .card-img-top {
+            border-radius: 20px 20px 0px 0px;
+            box-shadow: #282d78;
         }
         
-        .hover-port img {
-            width: 50px;
+        .contenedor-fluid .card {
+            border-radius: 20px;
+            box-shadow: 0 0 20px #282d78;
         }
         
-        .portfolio1:hover .hover-port {
-            transform: scale(1);
+        .contenedor-fluid {
+            background: rgb(224, 218, 218);
+            color: #282d78;
+            padding-top: 20px;
+            padding-bottom: 30px;
         }
         /* servicios.html */
         
@@ -772,9 +750,6 @@
                 height: 100%;
                 padding-left: 40px;
                 padding-right: 40px;
-            }
-            .contenedor-portfolio1 {
-                padding: 10px;
             }
         }
         
