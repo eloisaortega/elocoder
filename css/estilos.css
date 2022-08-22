@@ -770,12 +770,17 @@
             }
             #services1 {
                 height: 100%;
+                padding-left: 40px;
+                padding-right: 40px;
+            }
+            .contenedor-portfolio1 {
+                padding: 10px;
             }
         }
         
         @media screen and (min-width: 401px) and (max-width: 700px) {
             #header {
-                min-height: calc(100vh - 82px - 379px);
+                height: 100%;
                 width: 100%;
             }
             #header-contact {
@@ -839,7 +844,9 @@
                 min-height: calc(100vh - 82px - 379px);
             }
             #services1 {
-                height: 100vh;
+                height: 100%;
+                padding-left: 40px;
+                padding-right: 40px;
             }
             .contenedor-footer {
                 padding: 10px;
@@ -880,6 +887,9 @@
             .box h2 {
                 color: whitesmoke;
                 justify-content: center;
+            }
+            .contenedor-portfolio1 {
+                padding: 10px;
             }
         }
         /* pantallas grandes */
