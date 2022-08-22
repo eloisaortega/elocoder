@@ -449,6 +449,15 @@
             padding-bottom: 30px;
             padding-left: 20px;
         }
+        
+        .container-fluid .col {
+            padding: 0;
+            flex-grow: 0;
+        }
+        
+        .container-fluid .row {
+            margin: 40px;
+        }
         /* servicios.html */
         
         .service-row {
