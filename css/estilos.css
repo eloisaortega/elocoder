@@ -88,7 +88,7 @@ header a:hover {
 
 .header-content {
     margin-top: 140px;
-    padding-top: 140px;
+    padding-top: 250px;
     display: grid;
     grid-template-columns: auto;
     justify-content: center;
@@ -156,7 +156,7 @@ button {
 
 a .vertical {
     position: absolute;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     color: ivory;
     font-weight: 300;
@@ -231,7 +231,7 @@ a:hover .vertical {
 }
 
 .display-serv {
-    padding-top: 80px;
+    padding-top: 50px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -276,22 +276,6 @@ a:hover .vertical {
 
 .contendor-servi {
     background: rgb(224, 218, 218);
-}
-
-.btn-mkt {
-    color: ivory;
-}
-
-.btn-sem {
-    color: ivory;
-}
-
-.btn-dweb {
-    color: ivory;
-}
-
-.btn-posi {
-    color: ivory;
 }
 
 hr {
@@ -474,6 +458,7 @@ hr {
     padding-top: 20px;
     padding-bottom: 30px;
     padding-left: 20px;
+    padding: 0%;
 }
 
 .container-fluid .col {
@@ -482,7 +467,18 @@ hr {
 }
 
 .container-fluid .row {
-    margin: 40px;
+    margin: 0px;
+}
+
+.mt-5,
+.my-5 {
+    margin-top: 0!important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.row {
+    margin: 0;
 }
 
 .be-h {
@@ -700,7 +696,6 @@ hr {
 .text-mkt {
     display: flex;
     padding: 20px;
-    margin: 20px;
     width: 100%;
     color: #282d78;
     text-align: center;
@@ -763,10 +758,6 @@ hr {
         padding: 5px 5px;
         font-size: 12px;
     }
-    #header {
-        min-height: calc(100vh - 82px - 379px);
-        width: 100%;
-    }
     .btn-form {
         padding: 5px 5px;
         font-size: 12px;
@@ -780,17 +771,29 @@ hr {
         animation-duration: 4s;
         margin-left: 10px;
         margin-right: 50px;
+        text-align: center;
     }
     #btimpul {
         font-size: 15px;
-        padding: 10px 20px;
+        font: bold;
+        padding: 10px;
         border-radius: 20px;
         display: block;
+        width: 250px;
+        text-align: center;
+        margin-left: 10px;
+    }
+    .header-content h1 {
+        font-size: 20px;
+        display: flex;
+        color: ivory;
+        text-align: center;
     }
     .header-content h2,
     .header-content h3 {
         font-size: 30px;
         padding-top: 50px;
+        text-align: center;
     }
     #services1 {
         height: 100%;
@@ -813,14 +816,15 @@ hr {
         margin-bottom: 0;
     }
     .header-content h1 {
-        font-size: 10px;
+        padding-left: 40px;
+        font-size: 20px;
         display: flex;
         color: ivory;
         text-align: center;
     }
     .header-content h2,
     .header-content h3 {
-        font-size: 30px;
+        font-size: 50px;
         display: block;
         color: ivory;
     }
@@ -853,7 +857,7 @@ hr {
     }
     .btn-cont {
         display: inline-block;
-        font-size: 10px;
+        font-size: 15px;
         padding: 5px 5px;
         margin: 5px 5px;
     }
@@ -956,7 +960,7 @@ hr {
         font-size: 12px;
     }
     .btn-cont {
-        font-size: 12px;
+        font-size: 15px;
         padding: 10px 15px;
         border-radius: 20px;
     }
