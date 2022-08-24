@@ -511,6 +511,10 @@
         padding-bottom: 20px;
         justify-content: center;
         align-items: center;
+        border-radius: 10px 10px;
+        box-shadow: 0 0 5px #5258b6;
+        object-fit: cover;
+        padding: 0;
     }
     
     .servi-box p {
