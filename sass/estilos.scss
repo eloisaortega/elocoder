@@ -479,6 +479,7 @@ body {
         grid-gap: 2px;
     }
     .box h2 {
+        text-align: center;
         color: $color1;
         margin-bottom: 40px;
         @include media(sm) {
@@ -522,6 +523,9 @@ body {
         margin-left: 40px;
         margin-right: 40px;
         @include media(xs) {
+            text-align: center;
+        }
+        @include media(sm) {
             text-align: center;
         }
         @include media(md) {

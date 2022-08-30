@@ -468,6 +468,7 @@ body button {
   }
 }
 .grupo-2 .box h2 {
+  text-align: center;
   color: ivory;
   margin-bottom: 40px;
 }
@@ -520,6 +521,11 @@ body button {
   margin-right: 40px;
 }
 @media (max-width: 767px) {
+  .grupo-2 .box .maps {
+    text-align: center;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
   .grupo-2 .box .maps {
     text-align: center;
   }
