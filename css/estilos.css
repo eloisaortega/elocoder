@@ -388,17 +388,6 @@
         text-align: center;
     }
     
-    .btn-cont {
-        display: block;
-        font-size: 25px;
-        padding: 15px 50px;
-        font-weight: bold;
-        letter-spacing: 1px;
-        border-radius: 30px;
-        color: ivory;
-        text-decoration: none;
-    }
-    
     .box ul li a {
         list-style-type: none;
         color: ivory;
@@ -569,6 +558,17 @@
     
     .contact-wrapper>* {
         padding: 1em;
+    }
+    
+    .btn-cont {
+        display: block;
+        font-size: 25px;
+        padding: 15px 50px;
+        font-weight: bold;
+        letter-spacing: 1px;
+        border-radius: 30px;
+        color: ivory;
+        text-decoration: none;
     }
     
     .contact-form {
