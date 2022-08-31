@@ -1626,35 +1626,36 @@
                                         justify-content: left;
                                     }
                                 }
-                                @media screen and (min-width: 1201px) {}
-                                .cont {
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    flex-direction: column;
-                                    padding-top: 20px;
-                                }
-                                .cont .h-1 {
-                                    color: #282d78;
-                                    -webkit-animation: backInRight;
-                                    animation: backInRight;
-                                    -webkit-animation-duration: 2s;
-                                    animation-duration: 2s;
-                                    font-size: 35px;
-                                }
-                                .cont .h-2 {
-                                    font-size: 25px;
-                                    color: hsla(0deg, 0%, 0%, 0.5);
-                                    -webkit-animation: backInUp;
-                                    animation: backInUp;
-                                    -webkit-animation-duration: 2s;
-                                    animation-duration: 2s;
-                                }
-                                .contact-wrapper {
-                                    display: grid;
-                                    grid-template-columns: 2fr 1fr;
-                                }
-                                .box .maps {
-                                    text-align: center;
+                                @media screen and (min-width: 1201px) {
+                                    .cont {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        flex-direction: column;
+                                        padding-top: 20px;
+                                    }
+                                    .cont .h-1 {
+                                        color: #282d78;
+                                        -webkit-animation: backInRight;
+                                        animation: backInRight;
+                                        -webkit-animation-duration: 2s;
+                                        animation-duration: 2s;
+                                        font-size: 35px;
+                                    }
+                                    .cont .h-2 {
+                                        font-size: 25px;
+                                        color: hsla(0deg, 0%, 0%, 0.5);
+                                        -webkit-animation: backInUp;
+                                        animation: backInUp;
+                                        -webkit-animation-duration: 2s;
+                                        animation-duration: 2s;
+                                    }
+                                    .contact-wrapper {
+                                        display: grid;
+                                        grid-template-columns: 2fr 1fr;
+                                    }
+                                    .box .maps {
+                                        text-align: center;
+                                    }
                                 }
                             }
