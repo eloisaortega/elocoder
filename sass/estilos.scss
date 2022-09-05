@@ -11,6 +11,7 @@ $font: 'Open sans';
 $color1: ivory;
 $color2: rgba(255, 255, 255, 0.5);
 $color3: #282d78;
+$color3-1: #2d2b8b;
 $color4: #b66ad6;
 $color5: rgb(255, 255, 255);
 $color8: antiquewhite;
@@ -24,8 +25,14 @@ $color15: rgb(14, 18, 53);
 $color16: #1c1c1d;
 $color17: magenta;
 $color18: whitesmoke;
+$color19: #5258b6;
+$color20: hsla(286, 48%, 45%, 0.5);
 $shadow: rgba(0, 0, 0, 0.5);
 $botones: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+
+/* variable calc */
+
+$min-height: calc(100vh - 82px - 379px);
 
 /* breakpoints */
 
@@ -56,11 +63,20 @@ $breakpoint-lg: 1360px;
     }
 }
 
+@while condition {}
+
 
 /* index */
 
 html {
     width: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
 }
 
 header {
@@ -387,7 +403,7 @@ body {
 /* portfolio index carousel */
 
 .contenedor-portfolio {
-    min-height: calc(100vh - 82px - 379px);
+    min-height: $min-height;
     padding: 20px 20px 20px 20px;
     background-color: $color12;
     @include media(sm) {
@@ -502,7 +518,7 @@ body {
         @include media(xs) {
             display: inline-flex;
             text-align: center;
-            width: 10px;
+            width: 30px;
             height: 30px;
             color: $color11;
             margin-left: 30px;
@@ -584,5 +600,290 @@ body {
 }
 
 #derechos {
+    text-align: center;
+}
+
+
+/* portfolio.html */
+
+.contenedor-portfolio1 {
+    min-height: $min-height;
+    width: 100%;
+    padding: 10px 40px 40px 40px;
+    background: $color12;
+}
+
+.contenedor-port1 {
+    margin: 0;
+    background: $color12;
+    color: $color3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container-fluid {
+    background: $color12;
+    color: $color3;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding: 0%;
+    .card-img-top {
+        border-radius: 20px 20px 0px 0px;
+        box-shadow: $color3;
+    }
+    .card {
+        border-radius: 20px;
+        box-shadow: 0 0 20px $color3;
+    }
+    h1 {
+        color: $color3;
+    }
+    .col {
+        padding: 0;
+        flex-grow: 0;
+    }
+    .row {
+        margin: 0px;
+    }
+}
+
+.mt-5,
+.my-5 {
+    margin-top: 0 !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.row {
+    margin: 0;
+}
+
+.be-h {
+    color: $color8;
+    font-size: 20px;
+}
+
+.be-h:hover {
+    color: $color4;
+}
+
+
+/* servicios.html */
+
+.service-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#services h2 {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    color: $color8;
+}
+
+.height-main {
+    min-height: $min-height;
+}
+
+.servi-box {
+    margin: 10px 10px;
+    text-align: center;
+    width: 200px;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+    p {
+        color: $color1;
+        text-align: left;
+    }
+}
+
+.servi-box>img {
+    width: 100%;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px;
+    box-shadow: 0 0 5px $color19;
+    object-fit: cover;
+    padding: 0;
+}
+
+#header-contact {
+    background: $color12;
+    width: 100%;
+    height: 400px;
+}
+
+.contenedor1 {
+    height: 650px;
+    width: 100%;
+    align-items: center;
+}
+
+.cont .h-1 {
+    color: $color3;
+    animation: backInRight;
+    animation-duration: 2s;
+    font-size: 25px;
+}
+
+.cont .h-2 {
+    font-size: 15px;
+    color: $shadow;
+    animation: backInUp;
+    animation-duration: 2s;
+}
+
+.h-cont {
+    color: $color20;
+}
+
+.contentw {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    background: $color12;
+    color: $color1;
+    height: auto;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px $color20;
+}
+
+.contact-wrapper>* {
+    padding: 1em;
+}
+
+.btn-cont {
+    display: block;
+    font-size: 25px;
+    padding: 15px 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    color: $color1;
+    text-decoration: none;
+}
+
+.contact-form {
+    background: $color3;
+    .contact-form form p {
+        margin: 0;
+        padding: 1em;
+    }
+    .btn-form {
+        padding: 5px;
+    }
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1em;
+    border: none;
+    outline: 0;
+    background: none;
+    color: $color1;
+    border-bottom: 1px solid $color20;
+}
+
+.contact-form form button {
+    display: block;
+    background: $botones;
+    border: 0;
+    text-transform: uppercase;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: $color9;
+}
+
+.contact-form form button input {
+    border: none;
+}
+
+.contact-info {
+    background: $botones;
+    color: $color1;
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    ul li {
+        padding: 1em;
+    }
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+
+/* politicas de privacidad */
+
+.politicas {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $color3-1;
+    text-align: left;
+    background-color: $color12;
+    padding-bottom: 40px;
+    p {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    h1 {
+        color: $color3-1;
+        font-size: 30px;
+        margin-top: 30px;
+    }
+    h2 {
+        color: $color3-1;
+        font-size: 20px;
+    }
+}
+
+.h-ani {
+    color: $color9;
+    font-size: 40px;
+    margin-top: 20px;
+    animation: bounceIn;
+    animation-duration: 3s;
+}
+
+.text-mkt {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    color: $color3;
+    text-align: center;
+    overflow: hidden;
+}
+
+.textmkt {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    background: $color12;
+    height: auto;
     text-align: center;
 }
