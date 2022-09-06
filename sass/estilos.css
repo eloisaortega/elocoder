@@ -90,7 +90,6 @@ body {
 body hr {
   width: 100%;
   height: 8px;
-  border-radius: 15px;
   background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
   margin: 0;
 }
@@ -263,7 +262,9 @@ body button {
 .vertical {
   z-index: 2;
   background-color: antiquewhite;
-  border: 5px solid #282d78;
+  border: 5px solid transparent;
+  -o-border-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%) 1;
+     border-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%) 1;
   margin: 0;
 }
 @media (max-width: 767px) {
@@ -729,6 +730,11 @@ a .vertical:hover {
   flex-wrap: wrap;
   justify-content: center;
 }
+@media (min-width: 1023px) and (max-width: 1440px) {
+  .service-row {
+    width: auto;
+  }
+}
 
 #services h2 {
   margin-top: 30px;
@@ -736,25 +742,12 @@ a .vertical:hover {
   color: antiquewhite;
 }
 
-@media (max-width: 767px) {
-  .h2-servicio {
-    word-wrap: break-word;
-    word-break: break-word;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1440px) {
-  .h2-servicio {
-    word-wrap: break-word;
-    word-break: break-word;
-  }
-}
-
 .height-main {
   min-height: calc(100vh - 82px - 379px);
 }
 
 .servi-box {
-  margin: 10px 10px;
+  margin: 10px 30px;
   text-align: center;
   width: 200px;
   flex-wrap: wrap;
@@ -1165,7 +1158,7 @@ a .vertical:hover {
   font-family: biko;
   color: rgb(14, 18, 53);
   text-align: left;
-  font-size: 15px;
+  font-size: 25px;
 }
 .textmkt h4 {
   color: rgb(226, 43, 134);
@@ -1180,6 +1173,7 @@ a .vertical:hover {
 .cita {
   color: gray;
   font-weight: bolder;
+  text-align: center;
 }
 
 /* politicas.html */
@@ -1215,5 +1209,8 @@ a .vertical:hover {
 }
 
 /* cards extend */
+.ucard {
+  background-color: gray;
+}
 /* map */
 /* maps para serv-box index.html *//*# sourceMappingURL=estilos.css.map */
