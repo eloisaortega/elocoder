@@ -74,7 +74,6 @@ header h2 {
   text-align: center;
 }
 
-/* maps para serv-box index.html */
 @font-face {
   font-family: tango;
   src: url(/css/tangobold.ttf);
@@ -435,34 +434,6 @@ a .vertical:hover {
   text-align: center;
   color: rgb(226, 43, 134);
   font: bold;
-}
-.serv-box .p-1 {
-  color: rgb(211, 43, 133);
-  font-family: tango;
-  font-size: 20px;
-  text-shadow: 2px 2px 0 black;
-  text-align: center;
-}
-.serv-box .p-2 {
-  color: blue;
-  font-family: tango;
-  font-size: 20px;
-  text-shadow: 2px 2px 0 black;
-  text-align: center;
-}
-.serv-box .p-3 {
-  color: rgb(132, 34, 132);
-  font-family: tango;
-  font-size: 20px;
-  text-shadow: 2px 2px 0 black;
-  text-align: center;
-}
-.serv-box .p-4 {
-  color: rgb(70, 48, 121);
-  font-family: tango;
-  font-size: 20px;
-  text-shadow: 2px 2px 0 black;
-  text-align: center;
 }
 
 .serv-box > img {
@@ -1214,6 +1185,44 @@ a .vertical:hover {
   font-size: 20px;
 }
 
+.h-ani {
+  color: blueviolet;
+  font-size: 40px;
+  margin-top: 20px;
+  -webkit-animation: bounceIn;
+          animation: bounceIn;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.text-mkt {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  color: #282d78;
+  text-align: center;
+  overflow: hidden;
+}
+
+.textmkt {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+  background: rgb(224, 218, 218);
+  height: auto;
+  text-align: center;
+}
+
 /* cards extend */
-/* map */
-/* maps para serv-box index.html *//*# sourceMappingURL=estilos.css.map */
+@font-face {
+  font-family: tango;
+  src: url(/css/tangobold.ttf);
+}
+.serv-box p {
+  color: rgb(211, 43, 133);
+  font-family: tango;
+  font-size: 20px;
+  text-shadow: 2px 2px 0 black;
+  text-align: center;
+}/*# sourceMappingURL=estilos.css.map */

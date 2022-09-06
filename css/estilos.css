@@ -39,7 +39,42 @@ header h2 {
 /* breakpoints */
 /* breakpoints */
 /* index.html */
-/* NAV BAR INDEX */ /* breakpoints */
+/* NAV BAR INDEX */ /* breakpoints */ /* variables */
+/* variable calc */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* index */
+html {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+header {
+  position: relative;
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+}
+header h1 {
+  text-align: center;
+  font-size: 25px;
+  color: ivory;
+}
+header h2 {
+  text-align: center;
+}
+
+/* maps para serv-box index.html */
 @font-face {
   font-family: tango;
   src: url(/css/tangobold.ttf);
@@ -150,6 +185,7 @@ body button {
     margin-left: 60px;
     margin-top: 100px;
     box-sizing: border-box;
+    width: auto;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
@@ -183,6 +219,10 @@ body button {
   color: #282d78;
   text-align: center;
   z-index: 2;
+  -webkit-animation: fadeInBottomLeft;
+  animation: fadeInBottomLeft;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
 }
 @media (max-width: 767px) {
   #hero h1 {
@@ -232,7 +272,7 @@ body button {
 }
 
 a .vertical {
-  position: absolute;
+  position: relative;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #282d78;
@@ -241,10 +281,6 @@ a .vertical {
   writing-mode: vertical-rl;
   transform: rotate(180deg);
   padding: 30px;
-  -webkit-animation: fadeInBottomLeft;
-  animation: fadeInBottomLeft;
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
   z-index: 2;
   height: 100vh;
   text-align: center;
@@ -398,6 +434,34 @@ a .vertical:hover {
   text-align: center;
   color: rgb(226, 43, 134);
   font: bold;
+}
+.serv-box .p-1 {
+  color: rgb(211, 43, 133);
+  font-family: tango;
+  font-size: 20px;
+  text-shadow: 2px 2px 0 black;
+  text-align: center;
+}
+.serv-box .p-2 {
+  color: blue;
+  font-family: tango;
+  font-size: 20px;
+  text-shadow: 2px 2px 0 black;
+  text-align: center;
+}
+.serv-box .p-3 {
+  color: rgb(132, 34, 132);
+  font-family: tango;
+  font-size: 20px;
+  text-shadow: 2px 2px 0 black;
+  text-align: center;
+}
+.serv-box .p-4 {
+  color: rgb(70, 48, 121);
+  font-family: tango;
+  font-size: 20px;
+  text-shadow: 2px 2px 0 black;
+  text-align: center;
 }
 
 .serv-box > img {
@@ -1046,6 +1110,68 @@ a .vertical:hover {
 }
 
 /* marketing.html */
+@font-face {
+  font-family: biko;
+  src: url(css/Biko.otf);
+}
+.h-ani {
+  color: blueviolet;
+  font-size: 40px;
+  margin-top: 20px;
+  animation: bounceIn;
+  animation-duration: 3s;
+}
+
+.textmkt {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+  background: rgb(224, 218, 218);
+  height: auto;
+  text-align: left;
+  color: #282d78;
+}
+.textmkt p {
+  text-align: left;
+}
+.textmkt .text-mkt {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  color: #282d78;
+  text-align: left;
+  overflow: hidden;
+}
+.textmkt h1 {
+  font-family: biko;
+  color: #282d78;
+}
+.textmkt h2 {
+  font-family: biko;
+  color: rgb(226, 43, 134);
+}
+.textmkt h3 {
+  font-family: biko;
+  color: rgb(14, 18, 53);
+  text-align: left;
+  font-size: 15px;
+}
+.textmkt h4 {
+  color: rgb(226, 43, 134);
+  font-family: biko;
+}
+.textmkt h5 {
+  color: magenta;
+  font-family: biko;
+  font-size: 15px;
+}
+
+.cita {
+  color: gray;
+  font-weight: bolder;
+}
+
 /* politicas.html */
 /* politicas de privacidad */
 .politicas {
@@ -1078,44 +1204,8 @@ a .vertical:hover {
   font-size: 20px;
 }
 
-.h-ani {
-  color: blueviolet;
-  font-size: 40px;
-  margin-top: 20px;
-  animation: bounceIn;
-  animation-duration: 3s;
-}
-
-.text-mkt {
-  display: flex;
-  padding: 20px;
-  width: 100%;
-  color: #282d78;
-  text-align: center;
-  overflow: hidden;
-}
-
-.textmkt {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 1.5em;
-  background: rgb(224, 218, 218);
-  height: auto;
-  text-align: center;
-}
-
 /* cards extend */
-@font-face {
-  font-family: tango;
-  src: url(/css/tangobold.ttf);
-}
-.serv-box p {
-  color: rgb(211, 43, 133);
-  font-family: tango;
-  font-size: 20px;
-  text-shadow: 2px 2px 0 black;
-  text-align: center;
-}
+/* map */
+/* maps para serv-box index.html */
 
 /*# sourceMappingURL=estilos.css.map */

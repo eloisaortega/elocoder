@@ -1,18 +1,9 @@
-@font-face {
-    font-family: tango;
-    src: url(/css/tangobold.ttf);
-}
+/* maps para serv-box index.html */
 
 $colores: (
     primero:rgb(211, 43, 133),
     segundo: blue,
     tercero: rgb(132, 34, 132),
+    cuarto: rgb(70, 48, 121)
 );
 
-.serv-box p {
-  color: map-get($colores, primero);
-  font-family: tango;
-  font-size: 20px;
-  text-shadow: 2px 2px 0 black;
-  text-align: center;
-}

@@ -1,5 +1,8 @@
 /* NAV BAR INDEX */
 @import "../bases/breakpoints";
+@import "../bases/reset";
+@import "../bases/maps";
+
 @font-face {
   font-family: tango;
   src: url(/css/tangobold.ttf);
@@ -99,6 +102,7 @@ body {
       margin-left: 60px;
       margin-top: 100px;
       box-sizing: border-box;
+      width: auto;
     }
     @include media(sm) {
       margin-top: 0;
@@ -131,6 +135,10 @@ body {
     color: $color3;
     text-align: center;
     z-index: 2;
+    -webkit-animation: fadeInBottomLeft;
+    animation: fadeInBottomLeft;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
     @include media(xs) {
       display: flex;
     }
@@ -168,7 +176,7 @@ body {
   }
 }
   a .vertical {
-    position: absolute;
+    position: relative;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: $color3;
@@ -177,10 +185,6 @@ body {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
     padding: 30px;
-    -webkit-animation: fadeInBottomLeft;
-    animation: fadeInBottomLeft;
-    -webkit-animation-duration: 4s;
-    animation-duration: 4s;
     z-index: 2;
     height: 100vh;
     text-align: center;
@@ -324,6 +328,34 @@ body {
     color: $color13;
     font: bold;
   }
+  .p-1 {
+    color: map-get($map: $colores, $key: "primero");
+    font-family: tango;
+    font-size: 20px;
+    text-shadow: 2px 2px 0 $color21;
+    text-align: center;
+  }
+  .p-2 {
+      color: map-get($map: $colores, $key: "segundo");
+      font-family: tango;
+      font-size: 20px;
+      text-shadow: 2px 2px 0 $color21;
+      text-align: center;
+    }
+    .p-3 {
+      color: map-get($map: $colores, $key: "tercero");
+      font-family: tango;
+      font-size: 20px;
+      text-shadow: 2px 2px 0 $color21;
+      text-align: center;
+    }
+    .p-4 {
+      color: map-get($map: $colores, $key: "cuarto");
+      font-family: tango;
+      font-size: 20px;
+      text-shadow: 2px 2px 0 $color21;
+      text-align: center;
+    }
 }
 
 .serv-box > img {

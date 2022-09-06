@@ -1,0 +1,65 @@
+@font-face {
+    font-family: biko;
+    src: url(css/Biko.otf);
+}
+
+.h-ani {
+    color: $color9;
+    font-size: 40px;
+    margin-top: 20px;
+    animation: bounceIn;
+    animation-duration: 3s;
+  }
+  
+  
+  
+  .textmkt {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    background: $color12;
+    height: auto;
+    text-align: left;
+    color: $color3;
+    p{
+        text-align: left;
+    }
+    .text-mkt {
+        display: flex;
+        padding: 20px;
+        width: 100%;
+        color: $color3;
+        text-align: left;
+        overflow: hidden;
+  }
+
+  h1{
+    font-family: biko;
+    color: $color3;
+  }
+  h2{
+    font-family: biko;
+color: $color13;
+  }
+  h3{
+    font-family: biko;
+color: $color15;
+text-align: left;
+font-size: 15px;
+  }
+  h4{
+color: $color13;
+font-family: biko;
+  }
+  h5{
+color: $color17;
+font-family: biko;
+font-size: 15px;
+  }
+
+}
+.cita{
+    color: $color14;
+    font-weight: bolder;
+} 
