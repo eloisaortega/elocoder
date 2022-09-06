@@ -1,0 +1,78 @@
+/* portfolio.html */
+
+.contenedor-portfolio1 {
+    min-height: $min-height;
+    width: 100%;
+    padding: 10px 40px 40px 40px;
+    background: $color12;
+  
+    @include media(sm) {
+      padding: 10px;
+    }
+  }
+  
+  .contenedor-port1 {
+    margin: 0;
+    background: $color12;
+    color: $color3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  .container-fluid {
+    background: $color12;
+    color: $color3;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding: 0%;
+    
+    .card {
+      border-radius: 20px;
+      box-shadow: 0 0 20px $color3;
+    }
+    .card-img-top {
+      border-radius: 20px 20px 0px 0px;
+      box-shadow: $color3;
+    }
+    .card-title {
+      font-weight: 700;
+      font-size: 20px;
+      opacity: 0.85;
+     }
+    .card-text {
+      font-weight: 400;
+      font-size: 15px;
+      opacity: 0.85;
+     }
+    h1 {
+      color: $color3;
+    }
+    .col {
+      padding: 0;
+      flex-grow: 0;
+    }
+    .row {
+      margin: 0px;
+    }
+  }
+  
+  .mt-5,
+  .my-5 {
+    margin-top: 0 !important;
+    padding-bottom: 20px;
+  }
+  
+  .row {
+    margin: 0;
+  }
+  
+  .be-h {
+    color: $color8;
+    font-size: 20px;
+  }
+  
+  .be-h:hover {
+    color: $color4;
+  }
+  

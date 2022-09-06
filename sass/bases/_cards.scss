@@ -1,0 +1,12 @@
+.ucard {
+  @extend .card;
+  > img {
+    @extend .card-img-top;
+  }
+  > h5 {
+    @extend .card-title;
+  }
+  > p {
+    @extend .card-text
+  }
+}

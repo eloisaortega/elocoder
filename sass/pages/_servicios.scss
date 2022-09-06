@@ -1,0 +1,54 @@
+/* servicios.html */
+#header1 {
+    @include media(md) {
+      min-height: $min-height;
+    }
+  }
+  .service-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  #services h2 {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    color: $color8;
+  }
+  .h2-servicio{
+      @include media(xs){
+          word-wrap: break-word;
+          word-break: break-word;
+      }
+      @include media(md){
+          word-wrap: break-word;
+          word-break: break-word;
+      }
+  }
+  .height-main {
+    min-height: $min-height;
+  }
+  
+  .servi-box {
+    margin: 10px 10px;
+    text-align: center;
+    width: 200px;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+    p {
+      color: $color1;
+      text-align: left;
+    }
+  }
+  
+  .servi-box > img {
+    width: 100%;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px;
+    box-shadow: 0 0 5px $color19;
+    object-fit: cover;
+    padding: 0;
+  }

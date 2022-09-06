@@ -1,12 +1,11 @@
+/* reset */ /* variables */
+/* variable calc */
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
 
-/* variables */
-/* variable calc */
-/* breakpoints */
 /* index */
 html {
   width: 100%;
@@ -25,17 +24,6 @@ header {
   overflow: hidden;
   width: 100%;
 }
-@media (min-width: 767px) and (max-width: 1023px) {
-  header {
-    height: 100%;
-    width: 100%;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1440px) {
-  header {
-    width: 100%;
-  }
-}
 header h1 {
   text-align: center;
   font-size: 25px;
@@ -45,7 +33,17 @@ header h2 {
   text-align: center;
 }
 
-/* NAV BAR */
+/* variables */
+/* variables */
+/* variable calc */
+/* breakpoints */
+/* breakpoints */
+/* index.html */
+/* NAV BAR INDEX */ /* breakpoints */
+@font-face {
+  font-family: tango;
+  src: url(/css/tangobold.ttf);
+}
 body {
   font-family: "Open sans";
 }
@@ -105,29 +103,60 @@ body button {
 }
 
 /* HEADER HTML */
+@media (min-width: 767px) and (max-width: 1023px) {
+  #header {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1440px) {
+  #header {
+    width: 100%;
+  }
+}
+
 #hero {
   min-height: 100vh;
   position: relative;
 }
-#hero header a:hover {
-  color: blueviolet;
+@media (max-width: 767px) {
+  #hero {
+    min-height: 70vh;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #hero {
+    min-height: 70vh;
+  }
+}
+#hero .header-content1 {
+  height: 30px;
 }
 #hero .header-content {
   margin-top: 140px;
-  padding-top: 250px;
+  padding-top: 100px;
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
   align-items: center;
   width: 80%;
-  margin: auto;
+  margin-left: 140px;
   position: relative;
   z-index: 2;
+}
+@media (max-width: 767px) {
+  #hero .header-content {
+    padding-top: 0;
+    margin-left: 60px;
+    margin-top: 100px;
+    box-sizing: border-box;
+  }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #hero .header-content {
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: 100px;
   }
 }
 #hero video {
@@ -152,8 +181,9 @@ body button {
 #hero h1 {
   font-size: 20px;
   display: block;
-  color: ivory;
+  color: #282d78;
   text-align: center;
+  z-index: 2;
 }
 @media (max-width: 767px) {
   #hero h1 {
@@ -167,82 +197,85 @@ body button {
   }
 }
 #hero h2 {
-  font-size: 60px;
+  font-size: 80px;
   display: block;
   color: ivory;
   text-align: center;
-  text-shadow: 0 0 5px rgb(197, 192, 215);
+  text-shadow: 5px 5px 5px black;
 }
 @media (max-width: 767px) {
   #hero h2 {
-    font-size: 30px;
-    padding-top: 50px;
+    font-size: 40px;
+    padding-top: 40px;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #hero h2 {
-    font-size: 50px;
-    display: block;
+    font-size: 60px;
   }
 }
-#hero h3 {
-  font-size: 50px;
-  display: block;
-  color: ivory;
-  text-align: center;
-  text-shadow: 0 0 8px rgb(197, 192, 215);
+@media (min-width: 1023px) and (max-width: 1440px) {
+  #hero h2 {
+    font-size: 80px;
+  }
+}
+
+.vertical {
+  z-index: 2;
+  background-color: antiquewhite;
+  border: 5px solid #282d78;
+  margin: 0;
 }
 @media (max-width: 767px) {
-  #hero h3 {
-    font-size: 30px;
-    padding-top: 50px;
+  .vertical {
+    min-height: 70vh;
   }
 }
-@media (min-width: 767px) and (max-width: 1023px) {
-  #hero h3 {
-    font-size: 50px;
-  }
-}
-#hero a .vertical {
+
+a .vertical {
   position: absolute;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: ivory;
+  color: #282d78;
   font-weight: 300;
   -ms-writing-mode: tb-rl;
-      writing-mode: vertical-rl;
+  writing-mode: vertical-rl;
   transform: rotate(180deg);
-  padding: 10px;
-  left: 50px;
+  padding: 30px;
   -webkit-animation: fadeInBottomLeft;
-          animation: fadeInBottomLeft;
+  animation: fadeInBottomLeft;
   -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  animation-duration: 4s;
+  z-index: 2;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 8px;
+}
+a .vertical:hover {
+  color: rgb(224, 218, 218);
+  text-shadow: 2px 2px 0 black;
+  transform: scale(1.1);
+  box-shadow: 13px 15px 35px rgb(14, 18, 53);
+  font-family: tango;
+  z-index: 2;
 }
 @media (max-width: 767px) {
-  #hero a .vertical {
-    -ms-writing-mode: lr-tb;
-        writing-mode: horizontal-tb;
-    transform: rotate(360deg);
-    margin-top: -30px;
-    margin-left: 10px;
-    margin-right: 50px;
+  a .vertical {
+    height: 70vh;
+    width: 10%;
+    justify-content: center;
     text-align: center;
+    align-items: center;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #hero a .vertical {
-    font-weight: 300;
-    -ms-writing-mode: lr-tb;
-        writing-mode: horizontal-tb;
-    transform: rotate(360deg);
-    margin-top: -60px;
+  a .vertical {
+    height: 70vh;
   }
 }
-#hero a .vertical:hover .vertical {
-  color: blueviolet;
-}
-#hero #btimpul {
+
+#btimpul {
   background-color: #fff800;
   display: block;
   font-size: 25px;
@@ -256,23 +289,26 @@ body button {
   text-shadow: 0 0 8px rgb(197, 192, 215);
 }
 @media (max-width: 767px) {
-  #hero #btimpul {
+  #btimpul {
     font-size: 15px;
     padding: 10px;
     border-radius: 20px;
     width: 250px;
-    margin-left: 10px;
+    margin-left: 20px;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #hero #btimpul {
+  #btimpul {
     font-size: 15px;
     padding: 10px 30px;
     border-radius: 20px;
   }
 }
-#hero:hover {
-  color: blueviolet;
+#btimpul:hover {
+  color: rgb(14, 18, 53);
+  transform: scale(1.1);
+  box-shadow: 13px 15px 35px rgb(14, 18, 53);
+  font-family: tango;
 }
 
 /* servicios index.html */
@@ -324,11 +360,16 @@ body button {
 }
 
 .display-serv {
-  padding-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.display-serv:hover p {
+  transform: scale(1);
 }
 
 .serv-box {
@@ -336,10 +377,14 @@ body button {
   width: 200px;
   margin-bottom: 10px;
   height: 200px;
-  overflow: hidden;
   position: relative;
   cursor: pointer;
-  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+  flex-wrap: wrap;
+}
+.serv-box.serv-box:hover {
+  transform: scale(1.1);
+  box-shadow: 13px 15px 35px rgb(14, 18, 53);
 }
 .serv-box p {
   position: absolute;
@@ -362,10 +407,10 @@ body button {
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
-}
-
-.display-serv:hover p {
-  transform: scale(1);
+  padding-bottom: 20px;
+  border-radius: 20px 20px;
+  box-shadow: 0 0 5px rgb(14, 18, 53);
+  padding: 0;
 }
 
 .contendor-servi {
@@ -607,74 +652,7 @@ body button {
   text-align: center;
 }
 
-/* portfolio.html */
-.contenedor-portfolio1 {
-  min-height: calc(100vh - 82px - 379px);
-  width: 100%;
-  padding: 10px 40px 40px 40px;
-  background: rgb(224, 218, 218);
-}
-@media (min-width: 767px) and (max-width: 1023px) {
-  .contenedor-portfolio1 {
-    padding: 10px;
-  }
-}
-
-.contenedor-port1 {
-  margin: 0;
-  background: rgb(224, 218, 218);
-  color: #282d78;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.container-fluid {
-  background: rgb(224, 218, 218);
-  color: #282d78;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  padding-left: 20px;
-  padding: 0%;
-}
-.container-fluid .card-img-top {
-  border-radius: 20px 20px 0px 0px;
-  box-shadow: #282d78;
-}
-.container-fluid .card {
-  border-radius: 20px;
-  box-shadow: 0 0 20px #282d78;
-}
-.container-fluid h1 {
-  color: #282d78;
-}
-.container-fluid .col {
-  padding: 0;
-  flex-grow: 0;
-}
-.container-fluid .row {
-  margin: 0px;
-}
-
-.mt-5,
-.my-5 {
-  margin-top: 0 !important;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.row {
-  margin: 0;
-}
-
-.be-h {
-  color: antiquewhite;
-  font-size: 20px;
-}
-
-.be-h:hover {
-  color: #b66ad6;
-}
-
+/* servicios.html */
 /* servicios.html */
 @media (min-width: 1023px) and (max-width: 1440px) {
   #header1 {
@@ -692,6 +670,19 @@ body button {
   margin-top: 30px;
   padding-bottom: 30px;
   color: antiquewhite;
+}
+
+@media (max-width: 767px) {
+  .h2-servicio {
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1440px) {
+  .h2-servicio {
+    word-wrap: break-word;
+    word-break: break-word;
+  }
 }
 
 .height-main {
@@ -723,6 +714,85 @@ body button {
   padding: 0;
 }
 
+/* portfolio.html */
+/* portfolio.html */
+.contenedor-portfolio1 {
+  min-height: calc(100vh - 82px - 379px);
+  width: 100%;
+  padding: 10px 40px 40px 40px;
+  background: rgb(224, 218, 218);
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  .contenedor-portfolio1 {
+    padding: 10px;
+  }
+}
+
+.contenedor-port1 {
+  margin: 0;
+  background: rgb(224, 218, 218);
+  color: #282d78;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container-fluid {
+  background: rgb(224, 218, 218);
+  color: #282d78;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 20px;
+  padding: 0%;
+}
+.container-fluid .card, .container-fluid .ucard {
+  border-radius: 20px;
+  box-shadow: 0 0 20px #282d78;
+}
+.container-fluid .card-img-top, .container-fluid .ucard > img {
+  border-radius: 20px 20px 0px 0px;
+  box-shadow: #282d78;
+}
+.container-fluid .card-title, .container-fluid .ucard > h5 {
+  font-weight: 700;
+  font-size: 20px;
+  opacity: 0.85;
+}
+.container-fluid .card-text, .container-fluid .ucard > p {
+  font-weight: 400;
+  font-size: 15px;
+  opacity: 0.85;
+}
+.container-fluid h1 {
+  color: #282d78;
+}
+.container-fluid .col {
+  padding: 0;
+  flex-grow: 0;
+}
+.container-fluid .row {
+  margin: 0px;
+}
+
+.mt-5,
+.my-5 {
+  margin-top: 0 !important;
+  padding-bottom: 20px;
+}
+
+.row {
+  margin: 0;
+}
+
+.be-h {
+  color: antiquewhite;
+  font-size: 20px;
+}
+
+.be-h:hover {
+  color: #b66ad6;
+}
+
+/* contacto.html */
 /* contacto.html */
 #header-contact {
   background: rgb(224, 218, 218);
@@ -983,6 +1053,8 @@ body button {
   margin: 0 0 1rem 0;
 }
 
+/* marketing.html */
+/* politicas.html */
 /* politicas de privacidad */
 .politicas {
   margin: 0;
@@ -1040,5 +1112,18 @@ body button {
   padding: 1.5em;
   background: rgb(224, 218, 218);
   height: auto;
+  text-align: center;
+}
+
+/* cards extend */
+@font-face {
+  font-family: tango;
+  src: url(/css/tangobold.ttf);
+}
+.serv-box p {
+  color: rgb(211, 43, 133);
+  font-family: tango;
+  font-size: 20px;
+  text-shadow: 2px 2px 0 black;
   text-align: center;
 }/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,59 @@
+/* politicas de privacidad */
+
+.politicas {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $color3-1;
+    text-align: left;
+    background-color: $color12;
+    padding-bottom: 40px;
+    p {
+      margin-right: 50px;
+      margin-left: 50px;
+    }
+    h1 {
+      color: $color3-1;
+      font-size: 30px;
+      margin-top: 30px;
+    }
+    h2 {
+      color: $color3-1;
+      font-size: 20px;
+    }
+  }
+  
+  .h-ani {
+    color: $color9;
+    font-size: 40px;
+    margin-top: 20px;
+    animation: bounceIn;
+    animation-duration: 3s;
+  }
+  
+  .text-mkt {
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    color: $color3;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .textmkt {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+    background: $color12;
+    height: auto;
+    text-align: center;
+  }
+  

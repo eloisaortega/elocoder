@@ -1,0 +1,36 @@
+@import "../bases/variables";
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  
+  /* index */
+  
+  html {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  header {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+
+    h1 {
+      text-align: center;
+      font-size: 25px;
+      color: $color1;
+    }
+    h2 {
+      text-align: center;
+    }
+  }
