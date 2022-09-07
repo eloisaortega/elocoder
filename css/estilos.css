@@ -893,6 +893,7 @@ a .vertical:hover {
   }
 }
 .cont .h-1 {
+  padding-top: 20px;
   color: #282d78;
   animation: backInRight;
   animation-duration: 2s;
