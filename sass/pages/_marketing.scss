@@ -1,5 +1,7 @@
 @import "../bases/variables";
 @import "../bases/maps";
+@import "../bases/mixins-mark";
+
 
 @font-face {
   font-family: biko;
@@ -88,28 +90,16 @@
 }
 /* content-all */
 .content-all {
-  width: 200px;
-  margin:auto;
-  perspective: 1000px;
-  position: relative;
-  padding-top: 60px;
-  padding-bottom: 200px;
+@include all();
 }
 
 /* content-carrusel */
 .content-carrousel {
-  width: 100%;
-  margin: auto;
-  position: absolute;
-  animation: rotar 40s infinite linear;
-  transform-style: preserve-3d;
+@include content-carrusel();
 }
 /* content-carrusel */
 .content-carrousel>figure {
-  width: 250px;
-  height: 150px;
-  overflow: hidden;
-  position: absolute;
+@include figure-img();
 }
 .content-carrousel:hover{
 animation-play-state: paused;
@@ -128,21 +118,7 @@ animation-play-state: paused;
 }
 
  .content-all p{
-  line-height: 15px;
-  font-size: 12px;
-  color: $color1;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: hsla(0, 3%, 6%, 0.85);
-  padding: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 100%;
+@include parrafos()
 }
 
 
@@ -179,29 +155,16 @@ animation-play-state: paused;
 /*carrusel 2*/
 
 .content-all1 {
-  width: 200px;
-  margin: auto;
-  perspective: 10000px;
-  position: relative;
-  padding-top: 60px;
-  padding-bottom: 200px;
+@include all();
 }
 
 /* content-carrusel */
 .content-carrousel1 {
-  width: 100%;
-  height: 200px;
-  margin: auto;
-  position: absolute;
-  animation: rotar 40s infinite linear;
-  transform-style: preserve-3d;
+@include content-carrusel();
 }
 /* content-carrusel */
 .content-carrousel1>figure {
-  width: 250px;
-  height: 200px;
-  overflow: hidden;
-  position: absolute;
+@include figure-img();
 }
 .content-carrousel1:hover{
 animation-play-state: paused;
@@ -251,22 +214,23 @@ animation-play-state: paused;
 .carrusel3d{
   padding-top: 40px;
   height: 400px;
-  background-color: $color3;
+  background-color: $color12;
 }
 
  .content-all1 p{
-  font-size: 12px;
+@include parrafos()
+}
+.estrategias1{
+  color: $color20;
+}
+strong{
   color: $color1;
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: hsla(0, 3%, 6%, 0.85);
-  padding: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  width: 100%;
+}
+.contenedor3d:hover{
+transform: scale(1.2);
+overflow: hidden;
+}
+.carrusel3d:hover{
+  transform: scale(1.2);
+  overflow: hidden;
 }

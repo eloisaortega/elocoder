@@ -1,0 +1,44 @@
+@mixin parrafos {
+    line-height: 15px;
+    font-size: 12px;
+    color: $color1;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsla(0, 3%, 6%, 0.85);
+    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    
+  }
+  
+  @mixin content-carrusel {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    animation: rotar 40s infinite linear;
+    transform-style: preserve-3d;
+    
+  }
+  
+  @mixin figure-img {
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+    position: absolute;
+    box-shadow: 0 0 20px $color20;
+  }
+  
+  @mixin all {
+    width: 200px;
+    margin: auto;
+    perspective: 10000px;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 200px;
+  }  

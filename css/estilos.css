@@ -1198,7 +1198,7 @@ a .vertical:hover {
 .content-all {
   width: 200px;
   margin: auto;
-  perspective: 1000px;
+  perspective: 10000px;
   position: relative;
   padding-top: 60px;
   padding-bottom: 200px;
@@ -1219,6 +1219,7 @@ a .vertical:hover {
   height: 150px;
   overflow: hidden;
   position: absolute;
+  box-shadow: 0 0 20px hsla(286deg, 48%, 45%, 0.5);
 }
 
 .content-carrousel:hover {
@@ -1299,7 +1300,6 @@ a .vertical:hover {
 /* content-carrusel */
 .content-carrousel1 {
   width: 100%;
-  height: 200px;
   margin: auto;
   position: absolute;
   animation: rotar 40s infinite linear;
@@ -1309,9 +1309,10 @@ a .vertical:hover {
 /* content-carrusel */
 .content-carrousel1 > figure {
   width: 250px;
-  height: 200px;
+  height: 150px;
   overflow: hidden;
   position: absolute;
+  box-shadow: 0 0 20px hsla(286deg, 48%, 45%, 0.5);
 }
 
 .content-carrousel1:hover {
@@ -1366,10 +1367,11 @@ a .vertical:hover {
 .carrusel3d {
   padding-top: 40px;
   height: 400px;
-  background-color: #282d78;
+  background-color: rgb(224, 218, 218);
 }
 
 .content-all1 p {
+  line-height: 15px;
   font-size: 12px;
   color: ivory;
   align-items: center;
@@ -1384,6 +1386,24 @@ a .vertical:hover {
   margin-top: 10px;
   margin-bottom: 10px;
   width: 100%;
+}
+
+.estrategias1 {
+  color: hsla(286deg, 48%, 45%, 0.5);
+}
+
+strong {
+  color: ivory;
+}
+
+.contenedor3d:hover {
+  transform: scale(1.2);
+  overflow: hidden;
+}
+
+.carrusel3d:hover {
+  transform: scale(1.2);
+  overflow: hidden;
 }
 
 /* politicas.html */
@@ -1425,5 +1445,6 @@ a .vertical:hover {
 }
 /* map */
 /* maps para parrafos de serv-box index.html */
+/* mixins marketing.html */
 
 /*# sourceMappingURL=estilos.css.map */
