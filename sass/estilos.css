@@ -1220,8 +1220,8 @@ a .vertical:hover {
   width: 100%;
   margin: auto;
   position: absolute;
-  -webkit-animation: rotar 20s infinite linear;
-          animation: rotar 20s infinite linear;
+  -webkit-animation: rotar 40s infinite linear;
+          animation: rotar 40s infinite linear;
   transform-style: preserve-3d;
 }
 
@@ -1315,8 +1315,8 @@ a .vertical:hover {
   height: 200px;
   margin: auto;
   position: absolute;
-  -webkit-animation: rotar 15s infinite linear;
-          animation: rotar 15s infinite linear;
+  -webkit-animation: rotar 40s infinite linear;
+          animation: rotar 40s infinite linear;
   transform-style: preserve-3d;
 }
 
