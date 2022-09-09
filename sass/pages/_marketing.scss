@@ -1,66 +1,272 @@
+@import "../bases/variables";
+@import "../bases/maps";
+
 @font-face {
-    font-family: biko;
-    src: url(css/Biko.otf);
+  font-family: biko;
+  src: url(css/Biko.otf);
 }
 
 .h-ani {
-    color: $color9;
-    font-size: 40px;
-    margin-top: 20px;
-    animation: bounceIn;
-    animation-duration: 3s;
-  }
-  
-  
-  
-  .textmkt {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1.5em;
-    background: $color12;
-    height: auto;
+  color: $color9;
+  font-size: 40px;
+  margin-top: 20px;
+  animation: bounceIn;
+  animation-duration: 3s;
+}
+
+.textmkt {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+  background: $color12;
+  height: auto;
+  text-align: left;
+  color: $color3;
+  line-height: 40px;
+  p {
     text-align: left;
+    line-height: 40px;
+  }
+  .text-mkt {
+    display: flex;
+    padding: 20px;
+    width: 100%;
     color: $color3;
-    p{
-        text-align: left;
-    }
-    .text-mkt {
-        display: flex;
-        padding: 20px;
-        width: 100%;
-        color: $color3;
-        text-align: left;
-        overflow: hidden;
+    text-align: left;
+    overflow: hidden;
+    line-height: 40px;
   }
 
-  h1{
+  h1 {
     font-family: biko;
     color: $color3;
   }
-  h2{
+  h2 {
     font-family: biko;
-color: $color13;
+    color: $color13;
   }
-  h3{
+  h3 {
     font-family: biko;
-color: $color15;
-text-align: left;
-font-size: 25px;
+    color: $color15;
+    text-align: left;
+    font-size: 25px;
   }
-  h4{
-color: $color13;
-font-family: biko;
+  h4 {
+    color: $color13;
+    font-family: biko;
   }
-  h5{
-color: $color17;
-font-family: biko;
-font-size: 15px;
+  h5 {
+    color: $color17;
+    font-family: biko;
+    font-size: 15px;
   }
+}
+.cita {
+  color: $color14;
+  font-weight: bolder;
+  text-align: center;
+}
+/* carrusel 3d */
+.textomark {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+  background: $color12;
+  height: auto;
+  text-align: left;
+  color: $color3;
+  line-height: 40px;
+  p {
+    text-align: left;
+    line-height: 40px;
+  }
+}
+.separacion{
+  line-height: 40px;
+}
+/* content-all */
+.content-all {
+  width: 200px;
+  margin:auto;
+  perspective: 1000px;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 200px;
+}
+
+/* content-carrusel */
+.content-carrousel {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  animation: rotar 20s infinite linear;
+  transform-style: preserve-3d;
+}
+/* content-carrusel */
+.content-carrousel>figure {
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+}
+.content-carrousel:hover{
+animation-play-state: paused;
+}
+
+.content-carrousel>img {
+  width: 100%;
+  height: 200px;
 
 }
-.cita{
-    color: $color14;
-    font-weight: bolder;
-    text-align: center;
-} 
+
+.carrusel3d{
+  padding-top: 40px;
+  height: 400px;
+  background-color: $color3;
+}
+
+ .content-all p{
+  line-height: 15px;
+  font-size: 12px;
+  color: $color1;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsla(0, 3%, 6%, 0.85);
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+
+
+
+
+.content-carrousel figure:nth-child(1) {
+  transform: rotateY(0deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(2) {
+  transform: rotateY(52deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(3) {
+  transform: rotateY(103deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(4) {
+  transform: rotateY(154deg)translateZ(300px);
+}
+.content-carrousel figure:nth-child(5) {
+  transform: rotateY(208deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(6) {
+  transform: rotateY(257deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(7) {
+  transform: rotateY(308deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(8) {
+  transform: rotateY(360deg) translateZ(300px);
+}
+
+
+
+/*carrusel 2*/
+
+.content-all1 {
+  width: 200px;
+  margin: auto;
+  perspective: 10000px;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 200px;
+}
+
+/* content-carrusel */
+.content-carrousel1 {
+  width: 100%;
+  height: 200px;
+  margin: auto;
+  position: absolute;
+  animation: rotar 15s infinite linear;
+  transform-style: preserve-3d;
+}
+/* content-carrusel */
+.content-carrousel1>figure {
+  width: 250px;
+  height: 200px;
+  overflow: hidden;
+  position: absolute;
+}
+.content-carrousel1:hover{
+animation-play-state: paused;
+}
+
+.content-carrousel1>img {
+  width: 100%;
+  height: 200px;
+}
+
+
+
+.content-carrousel1 figure:nth-child(1) {
+  transform: rotateY(0deg)translateZ(300px);
+}
+.content-carrousel1 figure:nth-child(2) {
+  transform: rotateY(52deg)translateZ(300px);
+}
+.content-carrousel1 figure:nth-child(3) {
+  transform: rotateY(103deg)translateZ(300px);
+}
+.content-carrousel1 figure:nth-child(4) {
+  transform: rotateY(154deg)translateZ(300px);
+}
+.content-carrousel1 figure:nth-child(5) {
+  transform: rotateY(208deg)translateZ(300px);
+}
+.content-carrousel1 figure:nth-child(6) {
+  transform: rotateY(257deg)translateZ(300px);
+}
+.content-carrousel1 figure:nth-child(7) {
+  transform: rotateY(308deg)translateZ(300px);
+}
+.content-carrousel1 figure:nth-child(8) {
+  transform: rotateY(360deg)translateZ(300px);
+}
+
+
+@keyframes rotar{
+  from{
+    transform: rotateY(0deg);
+  }to{
+    transform: rotateY(360deg);
+  }
+}
+
+.carrusel3d{
+  padding-top: 40px;
+  height: 400px;
+  background-color: $color3;
+}
+
+ .content-all1 p{
+  font-size: 12px;
+  color: ivory;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsla(0, 3%, 6%, 0.85);
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}

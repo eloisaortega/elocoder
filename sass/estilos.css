@@ -1113,6 +1113,9 @@ a .vertical:hover {
 }
 
 /* marketing.html */
+/* variables */
+/* variable calc */
+/* maps para parrafos de serv-box index.html */
 @font-face {
   font-family: biko;
   src: url(css/Biko.otf);
@@ -1136,9 +1139,11 @@ a .vertical:hover {
   height: auto;
   text-align: left;
   color: #282d78;
+  line-height: 40px;
 }
 .textmkt p {
   text-align: left;
+  line-height: 40px;
 }
 .textmkt .text-mkt {
   display: flex;
@@ -1147,6 +1152,7 @@ a .vertical:hover {
   color: #282d78;
   text-align: left;
   overflow: hidden;
+  line-height: 40px;
 }
 .textmkt h1 {
   font-family: biko;
@@ -1176,6 +1182,232 @@ a .vertical:hover {
   color: gray;
   font-weight: bolder;
   text-align: center;
+}
+
+/* carrusel 3d */
+.textomark {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.5em;
+  background: rgb(224, 218, 218);
+  height: auto;
+  text-align: left;
+  color: #282d78;
+  line-height: 40px;
+}
+.textomark p {
+  text-align: left;
+  line-height: 40px;
+}
+
+.separacion {
+  line-height: 40px;
+}
+
+/* content-all */
+.content-all {
+  width: 200px;
+  margin: auto;
+  perspective: 1000px;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 200px;
+}
+
+/* content-carrusel */
+.content-carrousel {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  -webkit-animation: rotar 20s infinite linear;
+          animation: rotar 20s infinite linear;
+  transform-style: preserve-3d;
+}
+
+/* content-carrusel */
+.content-carrousel > figure {
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.content-carrousel:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.content-carrousel > img {
+  width: 100%;
+  height: 200px;
+}
+
+.carrusel3d {
+  padding-top: 40px;
+  height: 400px;
+  background-color: #282d78;
+}
+
+.content-all p {
+  line-height: 15px;
+  font-size: 12px;
+  color: ivory;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsla(0deg, 3%, 6%, 0.85);
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.content-carrousel figure:nth-child(1) {
+  transform: rotateY(0deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(2) {
+  transform: rotateY(52deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(3) {
+  transform: rotateY(103deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(4) {
+  transform: rotateY(154deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(5) {
+  transform: rotateY(208deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(6) {
+  transform: rotateY(257deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(7) {
+  transform: rotateY(308deg) translateZ(300px);
+}
+
+.content-carrousel figure:nth-child(8) {
+  transform: rotateY(360deg) translateZ(300px);
+}
+
+/*carrusel 2*/
+.content-all1 {
+  width: 200px;
+  margin: auto;
+  perspective: 10000px;
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 200px;
+}
+
+/* content-carrusel */
+.content-carrousel1 {
+  width: 100%;
+  height: 200px;
+  margin: auto;
+  position: absolute;
+  -webkit-animation: rotar 15s infinite linear;
+          animation: rotar 15s infinite linear;
+  transform-style: preserve-3d;
+}
+
+/* content-carrusel */
+.content-carrousel1 > figure {
+  width: 250px;
+  height: 200px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.content-carrousel1:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.content-carrousel1 > img {
+  width: 100%;
+  height: 200px;
+}
+
+.content-carrousel1 figure:nth-child(1) {
+  transform: rotateY(0deg) translateZ(300px);
+}
+
+.content-carrousel1 figure:nth-child(2) {
+  transform: rotateY(52deg) translateZ(300px);
+}
+
+.content-carrousel1 figure:nth-child(3) {
+  transform: rotateY(103deg) translateZ(300px);
+}
+
+.content-carrousel1 figure:nth-child(4) {
+  transform: rotateY(154deg) translateZ(300px);
+}
+
+.content-carrousel1 figure:nth-child(5) {
+  transform: rotateY(208deg) translateZ(300px);
+}
+
+.content-carrousel1 figure:nth-child(6) {
+  transform: rotateY(257deg) translateZ(300px);
+}
+
+.content-carrousel1 figure:nth-child(7) {
+  transform: rotateY(308deg) translateZ(300px);
+}
+
+.content-carrousel1 figure:nth-child(8) {
+  transform: rotateY(360deg) translateZ(300px);
+}
+
+@-webkit-keyframes rotar {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotar {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.carrusel3d {
+  padding-top: 40px;
+  height: 400px;
+  background-color: #282d78;
+}
+
+.content-all1 p {
+  font-size: 12px;
+  color: ivory;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsla(0deg, 3%, 6%, 0.85);
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 /* politicas.html */
