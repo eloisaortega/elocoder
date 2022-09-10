@@ -113,7 +113,7 @@
  }
  .grid4{
   @include media(sm) {
-    height: 500px;
+    height: 400px;
   }
   @include media(md) {
     height: 350px;
@@ -124,7 +124,20 @@
  }
 
  .grid1{
+  @include media(sm) {
+    height: 825px;
+  }
   @include media(lg) {
     height: 760px;
+  }
+ }
+.grid2{
+  @include media(sm) {
+    height: 550px;
+  }
+}
+ .grid3{
+  @include media(sm) {
+    height: 570px;
   }
  }

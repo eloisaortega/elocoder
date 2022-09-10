@@ -853,7 +853,7 @@ a .vertical:hover {
 
 @media (min-width: 767px) and (max-width: 1023px) {
   .grid4 {
-    height: 500px;
+    height: 400px;
   }
 }
 @media (min-width: 1023px) and (max-width: 1440px) {
@@ -867,9 +867,26 @@ a .vertical:hover {
   }
 }
 
+@media (min-width: 767px) and (max-width: 1023px) {
+  .grid1 {
+    height: 825px;
+  }
+}
 @media (min-width: 1440px) {
   .grid1 {
     height: 760px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .grid2 {
+    height: 550px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .grid3 {
+    height: 570px;
   }
 }
 
