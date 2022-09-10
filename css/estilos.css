@@ -1106,7 +1106,7 @@ a .vertical:hover {
 /* marketing.html */
 /* variables */
 /* variable calc */
-/* maps para parrafos de serv-box index.html */
+/* maps para parrafos de serv-box index.html */ /* breakpoints */
 @font-face {
   font-family: biko;
   src: url(css/Biko.otf);
@@ -1197,20 +1197,29 @@ a .vertical:hover {
 /* content-all */
 .content-all {
   width: 200px;
-  margin: auto;
+  margin: 0;
   perspective: 10000px;
   position: relative;
   padding-top: 60px;
   padding-bottom: 200px;
+  left: 0;
+  right: 0;
+}
+@media (max-width: 767px) {
+  .content-all {
+    margin: 0;
+  }
 }
 
 /* content-carrusel */
 .content-carrousel {
   width: 100%;
-  margin: auto;
+  margin: 0;
   position: absolute;
   animation: rotar 40s infinite linear;
   transform-style: preserve-3d;
+  left: 0;
+  right: 0;
 }
 
 /* content-carrusel */
@@ -1220,6 +1229,7 @@ a .vertical:hover {
   overflow: hidden;
   position: absolute;
   box-shadow: 0 0 20px hsla(286deg, 48%, 45%, 0.5);
+  cursor: pointer;
 }
 
 .content-carrousel:hover {
@@ -1233,7 +1243,7 @@ a .vertical:hover {
 
 .carrusel3d {
   padding-top: 40px;
-  height: 400px;
+  height: 300px;
   background-color: #282d78;
 }
 
@@ -1290,20 +1300,29 @@ a .vertical:hover {
 /*carrusel 2*/
 .content-all1 {
   width: 200px;
-  margin: auto;
+  margin: 0;
   perspective: 10000px;
   position: relative;
   padding-top: 60px;
   padding-bottom: 200px;
+  left: 0;
+  right: 0;
+}
+@media (max-width: 767px) {
+  .content-all1 {
+    margin: 0;
+  }
 }
 
 /* content-carrusel */
 .content-carrousel1 {
   width: 100%;
-  margin: auto;
+  margin: 0;
   position: absolute;
   animation: rotar 40s infinite linear;
   transform-style: preserve-3d;
+  left: 0;
+  right: 0;
 }
 
 /* content-carrusel */
@@ -1313,6 +1332,7 @@ a .vertical:hover {
   overflow: hidden;
   position: absolute;
   box-shadow: 0 0 20px hsla(286deg, 48%, 45%, 0.5);
+  cursor: pointer;
 }
 
 .content-carrousel1:hover {

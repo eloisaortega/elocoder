@@ -1,6 +1,7 @@
 @import "../bases/variables";
 @import "../bases/maps";
 @import "../bases/mixins-mark";
+@import "../bases/breakpoints";
 
 
 @font-face {
@@ -91,6 +92,9 @@
 /* content-all */
 .content-all {
 @include all();
+@include media(xs){
+  margin: 0;
+}
 }
 
 /* content-carrusel */
@@ -113,7 +117,7 @@ animation-play-state: paused;
 
 .carrusel3d{
   padding-top: 40px;
-  height: 400px;
+  height: 300px;
   background-color: $color3;
 }
 
@@ -156,6 +160,9 @@ animation-play-state: paused;
 
 .content-all1 {
 @include all();
+@include media(xs){
+  margin: 0;
+}
 }
 
 /* content-carrusel */
@@ -218,7 +225,7 @@ animation-play-state: paused;
 }
 
  .content-all1 p{
-@include parrafos()
+@include parrafos();
 }
 .estrategias1{
   color: $color20;
