@@ -752,6 +752,16 @@ a .vertical:hover {
     flex-wrap: wrap;
   }
 }
+@media (min-width: 767px) and (max-width: 1023px) {
+  .contenedor-grid {
+    height: 1500px;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1440px) {
+  .contenedor-grid {
+    height: 1200px;
+  }
+}
 
 .contenedor-grid > div {
   display: grid;

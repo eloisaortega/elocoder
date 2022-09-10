@@ -33,6 +33,12 @@
       display: flex;
       flex-wrap: wrap;
     }
+    @include media(sm){
+    height: 1500px;
+    }
+    @include media(md){
+      height: 1200px;
+    }
 }
 .contenedor-grid>div {
   display: grid;
