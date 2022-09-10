@@ -733,11 +733,12 @@ a .vertical:hover {
 
 .contenedor-grid1 {
   min-height: 100vh;
-  background-image: url(/assets/logo/leon.png);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.55), rgba(5, 7, 12, 0.55)), url(/assets/logo/leon.png);
   background-attachment: fixed;
   background-size: cover;
   background-color: rgb(224, 218, 218);
   color: #282d78;
+  padding: 20px;
 }
 
 .contenedor-grid {
@@ -809,6 +810,7 @@ a .vertical:hover {
   justify-content: center;
   text-align: center;
   color: #282d78;
+  border-radius: 15px;
 }
 
 .contenedor-grid1 p {
@@ -826,6 +828,7 @@ a .vertical:hover {
   text-align: left;
   justify-content: start;
   color: #282d78;
+  border-radius: 15px;
 }
 @media (min-width: 1023px) and (max-width: 1440px) {
   .contenedor-grid1 p {

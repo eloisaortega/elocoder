@@ -12,11 +12,12 @@
 }
 .contenedor-grid1 {
   min-height: 100vh;
-  background-image: url(/assets/logo/leon.png);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.55), rgba(5, 7, 12, 0.55)), url(/assets/logo/leon.png);
   background-attachment: fixed;
   background-size: cover;
   background-color: $color12;
   color: $color3;
+  padding: 20px;
 }
 .contenedor-grid {
   width: 100%;
@@ -77,6 +78,7 @@ grid-area: grid1;
   justify-content: center;
   text-align: center;
   color: $color3;
+  border-radius: 15px;
 }
 .contenedor-grid1 p{
  
@@ -94,6 +96,7 @@ grid-area: grid1;
   text-align: left;
   justify-content: start;
   color: $color3;
+  border-radius: 15px;
   @include media(md){
     font-size: 15px;
   }
