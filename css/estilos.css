@@ -1197,13 +1197,11 @@ a .vertical:hover {
 /* content-all */
 .content-all {
   width: 200px;
-  margin: 0;
+  margin: auto;
   perspective: 10000px;
   position: relative;
   padding-top: 60px;
   padding-bottom: 200px;
-  left: 0;
-  right: 0;
 }
 @media (max-width: 767px) {
   .content-all {
@@ -1214,12 +1212,11 @@ a .vertical:hover {
 /* content-carrusel */
 .content-carrousel {
   width: 100%;
-  margin: 0;
+  margin: auto;
   position: absolute;
   animation: rotar 40s infinite linear;
   transform-style: preserve-3d;
-  left: 0;
-  right: 0;
+  padding: 20px;
 }
 
 /* content-carrusel */
@@ -1300,13 +1297,11 @@ a .vertical:hover {
 /*carrusel 2*/
 .content-all1 {
   width: 200px;
-  margin: 0;
+  margin: auto;
   perspective: 10000px;
   position: relative;
   padding-top: 60px;
   padding-bottom: 200px;
-  left: 0;
-  right: 0;
 }
 @media (max-width: 767px) {
   .content-all1 {
@@ -1317,12 +1312,11 @@ a .vertical:hover {
 /* content-carrusel */
 .content-carrousel1 {
   width: 100%;
-  margin: 0;
+  margin: auto;
   position: absolute;
   animation: rotar 40s infinite linear;
   transform-style: preserve-3d;
-  left: 0;
-  right: 0;
+  padding: 20px;
 }
 
 /* content-carrusel */
@@ -1419,12 +1413,12 @@ strong {
 }
 
 .contenedor3d:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   overflow: hidden;
 }
 
 .carrusel3d:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   overflow: hidden;
 }
 

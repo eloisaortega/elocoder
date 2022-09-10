@@ -19,12 +19,11 @@
   
   @mixin content-carrusel {
     width: 100%;
-    margin: 0;
+    margin: auto;
     position: absolute;
     animation: rotar 40s infinite linear;
     transform-style: preserve-3d;
-    left: 0;
-    right: 0;
+    padding: 20px;
     
   }
   
@@ -39,11 +38,9 @@
   
   @mixin all {
     width: 200px;
-    margin: 0;
+    margin: auto;
     perspective: 10000px;
     position: relative;
     padding-top: 60px;
     padding-bottom: 200px;
-    left: 0;
-    right: 0;
   }  
