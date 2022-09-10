@@ -752,7 +752,7 @@ a .vertical:hover {
 }
 @media (max-width: 767px) {
   .contenedor-grid {
-    height: 1500px;
+    height: 2000px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -792,10 +792,14 @@ a .vertical:hover {
 .grid5 {
   grid-area: grid5;
 }
+@media (min-width: 1023px) and (max-width: 1440px) {
+  .grid5 {
+    display: contents;
+  }
+}
 
 .contenedor-grid1 h1 {
   font-size: 30px;
-  line-height: 30px;
   font-family: tango;
   color: black;
   align-items: center;
@@ -803,10 +807,7 @@ a .vertical:hover {
   background-color: hsla(0deg, 14%, 76%, 0.85);
   width: 100%;
   padding: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
   justify-content: center;
   text-align: center;
   color: #282d78;
@@ -821,10 +822,7 @@ a .vertical:hover {
   background-color: hsla(0deg, 14%, 76%, 0.85);
   width: 100%;
   padding: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
   text-align: left;
   justify-content: start;
   color: #282d78;
@@ -838,6 +836,44 @@ a .vertical:hover {
 @media (min-width: 1440px) {
   .contenedor-grid1 p {
     font-size: 15px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .grid5 {
+    height: 800px;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1440px) {
+  .grid5 {
+    height: 500px;
+  }
+}
+@media (min-width: 1440px) {
+  .grid5 {
+    height: 400px;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .grid4 {
+    height: 500px;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1440px) {
+  .grid4 {
+    height: 350px;
+  }
+}
+@media (min-width: 1440px) {
+  .grid4 {
+    height: 500px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .grid1 {
+    height: 760px;
   }
 }
 

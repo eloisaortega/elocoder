@@ -3,16 +3,17 @@
 @import "../bases/breakpoints";
 @import "../bases/variables";
 /* grid layout */
-*{
+* {
   margin: 0;
   box-sizing: border-box;
 }
-.height-main{
+.height-main {
   min-height: 100vh;
 }
 .contenedor-grid1 {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(5, 7, 12, 0.55), rgba(5, 7, 12, 0.55)), url(/assets/logo/leon.png);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.55), rgba(5, 7, 12, 0.55)),
+    url(/assets/logo/leon.png);
   background-attachment: fixed;
   background-size: cover;
   background-color: $color12;
@@ -29,41 +30,43 @@
   grid-template-areas:
     "grid5 grid2 grid3"
     "grid5 grid4 grid1";
-    @include media(xs){
-      height: 1500px;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    @include media(sm){
+  @include media(xs) {
+    height: 2000px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include media(sm) {
     height: 1500px;
-    }
-    @include media(md){
-      height: 1200px;
-    }
+  }
+  @include media(md) {
+    height: 1200px;
+  }
 }
-.contenedor-grid>div {
+.contenedor-grid > div {
   display: grid;
- place-items: center;
+  place-items: center;
 }
-.grid1{
-grid-area: grid1;
+.grid1 {
+  grid-area: grid1;
 }
-.grid2{
+.grid2 {
   grid-area: grid2;
 }
-.grid3{
+.grid3 {
   grid-area: grid3;
 }
-.grid4{
+.grid4 {
   grid-area: grid4;
 }
-.grid5{
+.grid5 {
   grid-area: grid5;
+  @include media(md) {
+    display: contents;
+  }
 }
 
-.contenedor-grid1 h1{
+.contenedor-grid1 h1 {
   font-size: 30px;
-  line-height: 30px;
   font-family: tango;
   color: $color21;
   align-items: center;
@@ -71,17 +74,13 @@ grid-area: grid1;
   background-color: hsla(0, 14%, 76%, 0.85);
   width: 100%;
   padding: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
   justify-content: center;
   text-align: center;
   color: $color3;
   border-radius: 15px;
 }
-.contenedor-grid1 p{
- 
+.contenedor-grid1 p {
   font-size: 15px;
   color: $color21;
   align-items: center;
@@ -89,18 +88,43 @@ grid-area: grid1;
   background-color: hsla(0, 14%, 76%, 0.85);
   width: 100%;
   padding: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin: 10px;
   text-align: left;
   justify-content: start;
   color: $color3;
   border-radius: 15px;
-  @include media(md){
+  @include media(md) {
     font-size: 15px;
   }
- @include media(lg){
-font-size: 15px;
- }
+  @include media(lg) {
+    font-size: 15px;
+  }
 }
+ .grid5{
+  @include media(sm) {
+    height: 800px;
+  }
+  @include media(md) {
+    height: 500px;
+  }
+  @include media(lg) {
+    height: 400px;
+  }
+ }
+ .grid4{
+  @include media(sm) {
+    height: 500px;
+  }
+  @include media(md) {
+    height: 350px;
+  }
+  @include media(lg) {
+    height: 500px;
+  }
+ }
+
+ .grid1{
+  @include media(lg) {
+    height: 760px;
+  }
+ }
