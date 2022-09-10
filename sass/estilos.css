@@ -852,6 +852,7 @@ a .vertical:hover {
 @media (min-width: 1440px) {
   .grid5 {
     height: 400px;
+    padding-top: 450px;
   }
 }
 
