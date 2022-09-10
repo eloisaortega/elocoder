@@ -224,7 +224,9 @@ animation-play-state: paused;
   color: $color20;
 }
 strong{
-  color: $color1;
+  color: $color3;
+  font: 900;
+  font-family: tango;
 }
 .contenedor3d:hover{
 transform: scale(1.2);
