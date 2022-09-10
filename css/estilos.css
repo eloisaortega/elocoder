@@ -715,56 +715,113 @@ a .vertical:hover {
 }
 
 /* servicios.html */
-/* servicios.html */
-@media (min-width: 1023px) and (max-width: 1440px) {
-  #header1 {
-    min-height: calc(100vh - 82px - 379px);
-  }
-}
-
-.service-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-@media (min-width: 1023px) and (max-width: 1440px) {
-  .service-row {
-    width: auto;
-  }
-}
-
-#services h2 {
-  margin-top: 30px;
-  padding-bottom: 30px;
-  color: antiquewhite;
+/* servicios.html */ /* breakpoints */ /* variables */
+/* variable calc */
+/* grid layout */
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .height-main {
-  min-height: calc(100vh - 82px - 379px);
+  min-height: 100vh;
 }
 
-.servi-box {
-  margin: 10px 30px;
-  text-align: center;
-  width: 200px;
-  flex-wrap: wrap;
-  padding: 10px;
-  align-items: center;
-}
-.servi-box p {
-  color: ivory;
-  text-align: left;
+.contenedor-grid1 {
+  min-height: 100vh;
+  background-image: url(/assets/logo/leon.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgb(224, 218, 218);
+  color: #282d78;
 }
 
-.servi-box > img {
+.contenedor-grid {
   width: 100%;
-  padding-bottom: 20px;
-  justify-content: center;
+  height: 100vh;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr, 1fr;
+  grid-template-areas: "grid5 grid2 grid3" "grid5 grid4 grid1";
+}
+@media (max-width: 767px) {
+  .contenedor-grid {
+    height: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.contenedor-grid > div {
+  display: grid;
+  place-items: center;
+}
+
+.grid1 {
+  grid-area: grid1;
+}
+
+.grid2 {
+  grid-area: grid2;
+}
+
+.grid3 {
+  grid-area: grid3;
+}
+
+.grid4 {
+  grid-area: grid4;
+}
+
+.grid5 {
+  grid-area: grid5;
+}
+
+.contenedor-grid1 h1 {
+  font-size: 30px;
+  line-height: 30px;
+  font-family: tango;
+  color: black;
   align-items: center;
-  border-radius: 10px 10px;
-  box-shadow: 0 0 5px #5258b6;
-  object-fit: cover;
-  padding: 0;
+  position: relative;
+  background-color: hsla(0deg, 14%, 76%, 0.85);
+  width: 100%;
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  text-align: center;
+  color: #282d78;
+}
+
+.contenedor-grid1 p {
+  font-size: 15px;
+  color: black;
+  align-items: center;
+  position: relative;
+  background-color: hsla(0deg, 14%, 76%, 0.85);
+  width: 100%;
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  justify-content: start;
+  color: #282d78;
+}
+@media (min-width: 1023px) and (max-width: 1440px) {
+  .contenedor-grid1 p {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1440px) {
+  .contenedor-grid1 p {
+    font-size: 15px;
+  }
 }
 
 /* portfolio.html */

@@ -1,49 +1,97 @@
 /* servicios.html */
-#header1 {
-    @include media(md) {
-      min-height: $min-height;
-    }
-  }
-  .service-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 
-    @include media(md){
-      width: auto;
+@import "../bases/breakpoints";
+@import "../bases/variables";
+/* grid layout */
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+.height-main{
+  min-height: 100vh;
+}
+.contenedor-grid1 {
+  min-height: 100vh;
+  background-image: url(/assets/logo/leon.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: $color12;
+  color: $color3;
+}
+.contenedor-grid {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr, 1fr;
+  grid-template-areas:
+    "grid5 grid2 grid3"
+    "grid5 grid4 grid1";
+    @include media(xs){
+      height: 1500px;
+      display: flex;
+      flex-wrap: wrap;
     }
-  }
-  
-  #services h2 {
-    margin-top: 30px;
-    padding-bottom: 30px;
-    color: $color8;
-  }
+}
+.contenedor-grid>div {
+  display: grid;
+ place-items: center;
+}
+.grid1{
+grid-area: grid1;
+}
+.grid2{
+  grid-area: grid2;
+}
+.grid3{
+  grid-area: grid3;
+}
+.grid4{
+  grid-area: grid4;
+}
+.grid5{
+  grid-area: grid5;
+}
 
-  .height-main {
-    min-height: $min-height;
+.contenedor-grid1 h1{
+  font-size: 30px;
+  line-height: 30px;
+  font-family: tango;
+  color: $color21;
+  align-items: center;
+  position: relative;
+  background-color: hsla(0, 14%, 76%, 0.85);
+  width: 100%;
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  text-align: center;
+  color: $color3;
+}
+.contenedor-grid1 p{
+ 
+  font-size: 15px;
+  color: $color21;
+  align-items: center;
+  position: relative;
+  background-color: hsla(0, 14%, 76%, 0.85);
+  width: 100%;
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+  justify-content: start;
+  color: $color3;
+  @include media(md){
+    font-size: 15px;
   }
-  
-  .servi-box {
-    margin: 10px 30px;
-    text-align: center;
-    width: 200px;
-    flex-wrap: wrap;
-    padding: 10px;
-    align-items: center;
-    p {
-      color: $color1;
-      text-align: left;
-    }
-  }
-  
-  .servi-box > img {
-    width: 100%;
-    padding-bottom: 20px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px 10px;
-    box-shadow: 0 0 5px $color19;
-    object-fit: cover;
-    padding: 0;
-  }
+ @include media(lg){
+font-size: 15px;
+ }
+}
