@@ -1,5 +1,6 @@
 /* reset */ /* variables */
 /* variable calc */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&display=swap");
 * {
   margin: 0%;
   padding: 0%;
@@ -342,10 +343,15 @@ a .vertical:hover {
 
 /* servicios index.html */
 .titulo {
+  font-family: "Montserrat", sans-serif;
   color: ivory;
   font-size: 30px;
   text-align: center;
   margin-bottom: 50px;
+  -webkit-animation: shakeX;
+          animation: shakeX;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
 }
 
 .titulo-1 {
@@ -1178,7 +1184,7 @@ a .vertical:hover {
   padding: 1.5em;
   background: rgb(224, 218, 218);
   height: auto;
-  text-align: left;
+  text-align: center;
   color: #282d78;
   line-height: 40px;
 }
@@ -1196,7 +1202,7 @@ a .vertical:hover {
   line-height: 40px;
 }
 .textmkt h1 {
-  font-family: biko;
+  font-family: tango;
   color: #282d78;
 }
 .textmkt h2 {
