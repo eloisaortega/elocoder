@@ -45,7 +45,7 @@
     height: 1200px;
   }
   @include media(lg) {
-    height: 1200px;
+    height: 1300px;
   }
 }
 .contenedor-grid > div {
@@ -71,7 +71,13 @@
 .grid2 {
   grid-area: grid2;
   @include media(sm) {
-    height: 550px;
+    height: 450px;
+  }
+  @include media(md) {
+    height: 300px;
+  }
+  @include media(lg) {
+    height: 400px;
   }
 }
 .grid3 {
@@ -86,7 +92,7 @@
     height: 400px;
   }
   @include media(md) {
-    height: 350px;
+    height: 400px;
   }
   @include media(lg) {
     height: 500px;
