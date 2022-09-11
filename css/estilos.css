@@ -720,146 +720,31 @@ a .vertical:hover {
 }
 
 .contenedor-grid1 {
+  display: flex;
   min-height: 100vh;
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(rgba(5, 7, 12, 0.55), rgba(5, 7, 12, 0.55)), url(/assets/logo/leon.png);
   background-attachment: fixed;
   background-size: cover;
   background-color: rgb(224, 218, 218);
   color: #282d78;
-  padding: 20px;
+  padding: 10px;
+  margin: auto;
 }
 
-.contenedor-grid {
+.contenedor-grid1 p {
+  font-size: 15px;
+  color: black;
+  align-items: center;
+  position: relative;
+  background-color: hsla(0deg, 14%, 76%, 0.85);
   width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: 1fr, 1fr;
-  grid-template-areas: "grid5 grid2 grid3" "grid5 grid4 grid1";
-  grid-auto-flow: row dense;
-}
-@media (max-width: 767px) {
-  .contenedor-grid {
-    height: 2500px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-}
-@media (min-width: 767px) and (max-width: 1023px) {
-  .contenedor-grid {
-    display: flex;
-    flex-wrap: wrap;
-    height: 2200px;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1440px) {
-  .contenedor-grid {
-    height: 1200px;
-  }
-}
-@media (min-width: 1440px) and (max-width: 2800px) {
-  .contenedor-grid {
-    height: 1300px;
-  }
-}
-
-.contenedor-grid > div {
-  display: grid;
-  place-items: center;
-  border: 5px solid ivory;
-}
-@media (min-width: 767px) and (max-width: 1023px) {
-  .contenedor-grid > div {
-    display: flex;
-    flex-wrap: wrap;
-    height: 420px;
-  }
-}
-
-.grid1 {
-  grid-area: grid1;
-}
-@media (min-width: 767px) and (max-width: 1023px) {
-  .grid1 {
-    height: 825px;
-  }
-}
-@media (min-width: 1440px) and (max-width: 2800px) {
-  .grid1 {
-    height: 760px;
-  }
-}
-
-.grid2 {
-  grid-area: grid2;
-}
-@media (min-width: 767px) and (max-width: 1023px) {
-  .grid2 {
-    height: 450px;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1440px) {
-  .grid2 {
-    height: 300px;
-  }
-}
-@media (min-width: 1440px) and (max-width: 2800px) {
-  .grid2 {
-    height: 400px;
-  }
-}
-
-.grid3 {
-  grid-area: grid3;
-}
-@media (min-width: 767px) and (max-width: 1023px) {
-  .grid3 {
-    height: 570px;
-  }
-}
-
-.grid4 {
-  grid-area: grid4;
-}
-@media (min-width: 767px) and (max-width: 1023px) {
-  .grid4 {
-    height: 400px;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1440px) {
-  .grid4 {
-    height: 400px;
-  }
-}
-@media (min-width: 1440px) and (max-width: 2800px) {
-  .grid4 {
-    height: 500px;
-  }
-}
-
-.grid5 {
-  grid-area: grid5;
-}
-@media (min-width: 1023px) and (max-width: 1440px) {
-  .grid5 {
-    display: contents;
-  }
-}
-@media (min-width: 767px) and (max-width: 1023px) {
-  .grid5 {
-    height: 800px;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1440px) {
-  .grid5 {
-    height: 500px;
-  }
-}
-@media (min-width: 1440px) and (max-width: 2800px) {
-  .grid5 {
-    height: 400px;
-  }
+  padding: 10px;
+  text-align: left;
+  justify-content: start;
+  color: #282d78;
+  border-radius: 15px;
 }
 
 .contenedor-grid1 h1 {
@@ -871,41 +756,50 @@ a .vertical:hover {
   background-color: hsla(0deg, 14%, 76%, 0.85);
   width: 100%;
   padding: 10px;
-  margin: 10px;
   justify-content: center;
   text-align: center;
   color: #282d78;
   border-radius: 15px;
 }
 
-.contenedor-grid1 p {
-  font-size: 15px;
-  color: black;
+.contenedor-grid {
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+}
+
+.contenedor-grid1 .contenedor-grid {
+  max-width: 750px;
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-gap: 30px;
+  justify-content: center;
   align-items: center;
-  position: relative;
-  background-color: hsla(0deg, 14%, 76%, 0.85);
-  width: 100%;
-  padding: 10px;
-  margin: 10px;
-  text-align: left;
-  justify-content: start;
-  color: #282d78;
-  border-radius: 15px;
 }
-@media (min-width: 767px) and (max-width: 1023px) {
-  .contenedor-grid1 p {
-    font-size: 20px;
-  }
-}
-@media (min-width: 1023px) and (max-width: 1440px) {
-  .contenedor-grid1 p {
-    font-size: 15px;
+@media (max-width: 767px) {
+  .contenedor-grid1 .contenedor-grid {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 @media (min-width: 1440px) and (max-width: 2800px) {
-  .contenedor-grid1 p {
-    font-size: 20px;
+  .contenedor-grid1 .contenedor-grid {
+    max-width: 1200px;
+    grid-template-columns: 400px 400px 400px;
   }
+}
+
+.contenedor-grid1 .contenedor-grid .grid1 {
+  grid-column: 1/3;
+}
+
+.contenedor-grid1 .contenedor-grid .grid4 {
+  grid-column: 1/4;
+}
+
+.contenedor-grid1 .contenedor-grid .grid5 {
+  grid-column: 2/4;
 }
 
 /* portfolio.html */
