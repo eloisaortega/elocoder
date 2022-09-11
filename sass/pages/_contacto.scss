@@ -5,6 +5,11 @@
     width: 100%;
     height: 400px;
     margin: 0;
+    @include media(lg) {
+      font-size: 25px;
+height: 500px;
+
+    }
   }
   .contenedor-form {
     @include media(md) {
@@ -23,6 +28,7 @@
       width: auto;
       justify-content: center;
     }
+    
   }
   .cont {
     @include media(md) {
@@ -37,6 +43,7 @@
       justify-content: center;
       flex-direction: column;
       padding-top: 20px;
+      padding-bottom: 30px;
     }
   
     .h-1 {
@@ -56,7 +63,7 @@
         animation: backInRight;
         -webkit-animation-duration: 2s;
         animation-duration: 2s;
-        font-size: 35px;
+        font-size: 40px;
       }
     }
   
@@ -67,19 +74,18 @@
       animation-duration: 2s;
   
       @include media(md) {
-        font-size: 15px;
+        font-size: 25px;
+      }
+      @include media(lg) {
+        font-size: 35px;
+        color: $shadow;
+        -webkit-animation: backInUp;
+        animation: backInUp;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
       }
     }
-    @include media(lg) {
-      font-size: 25px;
-      color: $shadow;
-      -webkit-animation: backInUp;
-      animation: backInUp;
-      -webkit-animation-duration: 2s;
-      animation-duration: 2s;
-    }
   }
-  
   .h-cont {
     color: $color20;
     @include media(md) {
@@ -164,11 +170,11 @@
       margin: 0;
     }
     @include media(lg) {
-      width: 500px;
       height: 80px;
       font-size: 25px;
       padding: 10px 10px;
       border-radius: 20px;
+      padding-bottom: 30px;
     }
   }
   .contact-form form {

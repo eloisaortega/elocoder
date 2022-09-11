@@ -984,6 +984,12 @@ a .vertical:hover {
   height: 400px;
   margin: 0;
 }
+@media (min-width: 1440px) and (max-width: 2800px) {
+  #header-contact {
+    font-size: 25px;
+    height: 500px;
+  }
+}
 
 @media (min-width: 1023px) and (max-width: 1440px) {
   .contenedor-form {
@@ -1021,6 +1027,7 @@ a .vertical:hover {
     justify-content: center;
     flex-direction: column;
     padding-top: 20px;
+    padding-bottom: 30px;
   }
 }
 .cont .h-1 {
@@ -1043,7 +1050,7 @@ a .vertical:hover {
     animation: backInRight;
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
-    font-size: 35px;
+    font-size: 40px;
   }
 }
 .cont .h-2 {
@@ -1054,12 +1061,12 @@ a .vertical:hover {
 }
 @media (min-width: 1023px) and (max-width: 1440px) {
   .cont .h-2 {
-    font-size: 15px;
+    font-size: 25px;
   }
 }
 @media (min-width: 1440px) and (max-width: 2800px) {
-  .cont {
-    font-size: 25px;
+  .cont .h-2 {
+    font-size: 35px;
     color: rgba(0, 0, 0, 0.5);
     -webkit-animation: backInUp;
     animation: backInUp;
@@ -1162,11 +1169,11 @@ a .vertical:hover {
 }
 @media (min-width: 1440px) and (max-width: 2800px) {
   .btn-cont {
-    width: 500px;
     height: 80px;
     font-size: 25px;
     padding: 10px 10px;
     border-radius: 20px;
+    padding-bottom: 30px;
   }
 }
 
