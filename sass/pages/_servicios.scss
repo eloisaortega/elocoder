@@ -30,38 +30,84 @@
   grid-template-areas:
     "grid5 grid2 grid3"
     "grid5 grid4 grid1";
+    grid-auto-flow: row dense;
   @include media(xs) {
-    height: 2000px;
+    height: 2500px;
     display: flex;
     flex-wrap: wrap;
   }
   @include media(sm) {
-    height: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 2200px;
   }
   @include media(md) {
+    height: 1200px;
+  }
+  @include media(lg) {
     height: 1200px;
   }
 }
 .contenedor-grid > div {
   display: grid;
   place-items: center;
+  border: 5px solid ivory;
+  @include media(sm) {
+    display: flex;
+    flex-wrap: wrap;
+    height: 420px;
+  }
+  
 }
 .grid1 {
   grid-area: grid1;
+  @include media(sm) {
+    height: 825px;
+  }
+  @include media(lg) {
+    height: 760px;
+  }
 }
 .grid2 {
   grid-area: grid2;
+  @include media(sm) {
+    height: 550px;
+  }
 }
 .grid3 {
   grid-area: grid3;
+  @include media(sm) {
+    height: 570px;
+  }
 }
 .grid4 {
   grid-area: grid4;
+  @include media(sm) {
+    height: 400px;
+  }
+  @include media(md) {
+    height: 350px;
+  }
+  @include media(lg) {
+    height: 500px;
+  }
 }
 .grid5 {
   grid-area: grid5;
   @include media(md) {
     display: contents;
+  }
+  @include media(sm) {
+    height: 800px;
+  }
+  @include media(md) {
+    height: 500px;
+  }
+  @include media(lg) {
+    height: 400px;
+  }
+  @include media(xlg) {
+    height: 400px;
   }
 }
 
@@ -93,52 +139,18 @@
   justify-content: start;
   color: $color3;
   border-radius: 15px;
+  @include media(sm) {
+    font-size: 20px;
+  }
   @include media(md) {
     font-size: 15px;
   }
   @include media(lg) {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
- .grid5{
-  @include media(sm) {
-    height: 800px;
-  }
-  @include media(md) {
-    height: 500px;
-  }
-  @include media(lg) {
-    height: 400px;
-    padding-top: 450px;
-  }
- }
- .grid4{
-  @include media(sm) {
-    height: 400px;
-  }
-  @include media(md) {
-    height: 350px;
-  }
-  @include media(lg) {
-    height: 500px;
-  }
- }
 
- .grid1{
-  @include media(sm) {
-    height: 825px;
-  }
-  @include media(lg) {
-    height: 760px;
-  }
- }
-.grid2{
-  @include media(sm) {
-    height: 550px;
-  }
-}
- .grid3{
-  @include media(sm) {
-    height: 570px;
-  }
- }
+
+
+
+
