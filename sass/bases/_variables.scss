@@ -21,6 +21,7 @@ $color18: whitesmoke;
 $color19: #5258b6;
 $color20: hsla(286, 48%, 45%, 0.5);
 $color21: black;
+$color22: rgb(195, 194, 202);
 $shadow: rgba(0, 0, 0, 0.5);
 $botones: linear-gradient(
   -225deg,
@@ -29,7 +30,11 @@ $botones: linear-gradient(
   #ff1361 67%,
   #fff800 100%
 );
+$i: url(/assets/cards/marketing.jpg);
 
 /* variable calc */
 
 $min-height: calc(100vh - 82px - 379px);
+
+
+

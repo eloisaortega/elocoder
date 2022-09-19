@@ -1,6 +1,6 @@
 .ucard {
   @extend .card;
-  background-color: gray;
+  background-color: $color12;
   width: 300px;
   > img {
     @extend .card-img-top;

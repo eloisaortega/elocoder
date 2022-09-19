@@ -1,8 +1,17 @@
 /* maps para parrafos de serv-box index.html */
 
 $colores: (
-    primero:rgb(211, 43, 133),
-    segundo: blue,
+    primero:rgb(218, 71, 149),
+    segundo: rgb(39, 39, 110),
     tercero: rgb(132, 34, 132),
-    cuarto: rgb(70, 48, 121)
+    cuarto: rgb(70, 48, 121),
+    quinto: rgb(228, 224, 94),
+    sexto: rgb(207, 55, 96),
 );
+
+
+@mixin cardbtn {
+  color: $color1;
+  border-color: $color3;
+  text-shadow:  5px 5px 8px $color15;
+}

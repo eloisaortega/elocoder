@@ -3,7 +3,6 @@
 @import "../bases/mixins-mark";
 @import "../bases/breakpoints";
 
-
 @font-face {
   font-family: biko;
   src: url(css/Biko.otf);
@@ -42,26 +41,27 @@
   }
 
   h1 {
-    font-family: tango;
+    font-family: $font;
+    font: 900;
     color: $color3;
   }
   h2 {
-    font-family: biko;
+    font-family: $font;
     color: $color13;
   }
   h3 {
-    font-family: biko;
-    color: $color15;
-    text-align: left;
+    font-family: $font;
+    color: $color3;
+    text-align: center;
     font-size: 25px;
   }
   h4 {
     color: $color13;
-    font-family: biko;
+    font-family: $font;
   }
   h5 {
     color: $color17;
-    font-family: biko;
+    font-family: $font;
     font-size: 15px;
   }
 }
@@ -86,48 +86,43 @@
     line-height: 40px;
   }
 }
-.separacion{
+.separacion {
   line-height: 40px;
 }
 /* content-all */
 .content-all {
-@include all();
-@include media(xs){
-  margin: 0;
-}
+  @include all();
+  @include media(xs) {
+    margin: 0;
+  }
 }
 
 /* content-carrusel */
 .content-carrousel {
-@include content-carrusel();
+  @include content-carrusel();
 }
 /* content-carrusel */
-.content-carrousel>figure {
-@include figure-img();
+.content-carrousel > figure {
+  @include figure-img();
 }
-.content-carrousel:hover{
-animation-play-state: paused;
+.content-carrousel:hover {
+  animation-play-state: paused;
 }
 
-.content-carrousel>img {
+.content-carrousel > img {
   width: 100%;
   height: 200px;
-
 }
 
-.carrusel3d{
+.carrusel3d {
   padding-top: 40px;
   height: 300px;
   background-color: $color3;
 }
 
- .content-all p{
-@include parrafos()
+.content-all p {
+  @include parrafos();
 }
-
-
-
-
 
 .content-carrousel figure:nth-child(1) {
   transform: rotateY(0deg) translateZ(300px);
@@ -139,7 +134,7 @@ animation-play-state: paused;
   transform: rotateY(103deg) translateZ(300px);
 }
 .content-carrousel figure:nth-child(4) {
-  transform: rotateY(154deg)translateZ(300px);
+  transform: rotateY(154deg) translateZ(300px);
 }
 .content-carrousel figure:nth-child(5) {
   transform: rotateY(208deg) translateZ(300px);
@@ -154,92 +149,324 @@ animation-play-state: paused;
   transform: rotateY(360deg) translateZ(300px);
 }
 
-
-
 /*carrusel 2*/
 
 .content-all1 {
-@include all();
-@include media(xs){
-  margin: 0;
-}
+  @include all();
+  @include media(xs) {
+    margin: 0;
+  }
 }
 
 /* content-carrusel */
 .content-carrousel1 {
-@include content-carrusel();
+  @include content-carrusel();
 }
 /* content-carrusel */
-.content-carrousel1>figure {
-@include figure-img();
+.content-carrousel1 > figure {
+  @include figure-img();
 }
-.content-carrousel1:hover{
-animation-play-state: paused;
+.content-carrousel1:hover {
+  animation-play-state: paused;
 }
 
-.content-carrousel1>img {
+.content-carrousel1 > img {
   width: 100%;
   height: 200px;
 }
 
-
-
 .content-carrousel1 figure:nth-child(1) {
-  transform: rotateY(0deg)translateZ(300px);
+  transform: rotateY(0deg) translateZ(300px);
 }
 .content-carrousel1 figure:nth-child(2) {
-  transform: rotateY(52deg)translateZ(300px);
+  transform: rotateY(52deg) translateZ(300px);
 }
 .content-carrousel1 figure:nth-child(3) {
-  transform: rotateY(103deg)translateZ(300px);
+  transform: rotateY(103deg) translateZ(300px);
 }
 .content-carrousel1 figure:nth-child(4) {
-  transform: rotateY(154deg)translateZ(300px);
+  transform: rotateY(154deg) translateZ(300px);
 }
 .content-carrousel1 figure:nth-child(5) {
-  transform: rotateY(208deg)translateZ(300px);
+  transform: rotateY(208deg) translateZ(300px);
 }
 .content-carrousel1 figure:nth-child(6) {
-  transform: rotateY(257deg)translateZ(300px);
+  transform: rotateY(257deg) translateZ(300px);
 }
 .content-carrousel1 figure:nth-child(7) {
-  transform: rotateY(308deg)translateZ(300px);
+  transform: rotateY(308deg) translateZ(300px);
 }
 .content-carrousel1 figure:nth-child(8) {
-  transform: rotateY(360deg)translateZ(300px);
+  transform: rotateY(360deg) translateZ(300px);
 }
 
-
-@keyframes rotar{
-  from{
+@keyframes rotar {
+  from {
     transform: rotateY(0deg);
-  }to{
+  }
+  to {
     transform: rotateY(360deg);
   }
 }
 
-.carrusel3d{
+.carrusel3d {
   padding-top: 40px;
   height: 400px;
   background-color: $color12;
 }
 
- .content-all1 p{
-@include parrafos();
+.content-all1 p {
+  @include parrafos();
 }
-.estrategias1{
-  color: $color20;
+.estrategias1 {
+  color: $color3;
 }
-strong{
+strong {
   color: $color3;
   font: 900;
   font-family: tango;
+  text-transform: uppercase;
 }
-.contenedor3d:hover{
-transform: scale(1.1);
-overflow: hidden;
-}
-.carrusel3d:hover{
+.contenedor3d:hover {
   transform: scale(1.1);
   overflow: hidden;
 }
+.carrusel3d:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+/* acordeon desplegable */
+#body1 {
+  margin: 0 auto;
+  background: $color12;
+  display: block;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  @include media(lg) {
+    height: 70vh;
+  }
+}
+div.contenedor-ventajas{
+  justify-content: center;
+  align-items: center;
+}
+div.subapartado {
+  margin: auto;
+  width: 400px;
+  min-height: 50px;
+  background-color: $color3;
+  @include media(lg) {
+    width: 700px;
+  }
+}
+
+div.subapartado:hover div.info1 {
+  height: 240px;
+}
+
+div.titulo-ventajas {
+  margin: auto;
+  width: 400px;
+  height: 50px;
+  background-color: $color3;
+  border: 5px solid transparent;
+  border-image: $botones 1;
+  overflow: hidden;
+  @include media(lg) {
+    width: 700px;
+  }
+}
+p.titulo-ventajas {
+  text-align: center;
+  margin: 10px;
+  color: $color1;
+}
+div.info1 {
+  width: 400px;
+  height: 0px;
+  background-color: $color3;
+  overflow: hidden;
+  transition: height 0.2s;
+  @include media(lg) {
+    width: 700px;
+  }
+}
+p.info1 {
+  color: $color1;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+div.contenedor-mkt {
+  margin: 20px;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: $color3;
+  h2 {
+    font-size: 35px;
+  }
+  p {
+    text-align: center;
+  }
+  @include media(xs){
+    display: block;
+  }
+}
+
+/* marketing digital */
+
+/* card horizontal hover */
+
+#body3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $color12;
+  height: 100vh;
+  @include media(xs){
+    display: flex;
+    padding-bottom: 700px;
+    padding-top: 150px;
+  }
+  @include media(sm){
+    margin-top: 100px;
+    display: block;
+  margin-left: 50px;
+  height: 70vh;
+  }
+  @include media(md){
+    margin-top: 100px;
+    display: block;
+  margin-left: 150px;
+  height: 80vh;
+  }
+  @include media(lg){
+    margin-top: 100px;
+    display: block;
+  margin-left: 300px;
+  height: 80vh;
+  }
+  }
+
+.card-h {
+  color: $color1;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  @include media(xs){
+    width: 250px;
+    height: 250px;
+  }
+  @include media(sm){
+    width: 400px;
+    height: 400px;
+  }
+  @include media(md){
+    width: 400px;
+    height: 400px;
+  }
+}
+.card-h .card-landing {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 10px black;
+  background: linear-gradient(-180deg, transparent 80%, #231557), var(--i);
+  background-position: cover;
+  background-size: cover;
+  z-index: 100;
+}
+
+.card-h .card-landing a {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 25px;
+  color: $color1;
+  @include media(xs){
+    color: $color3;
+  }
+}
+
+.card-h .card-info {
+  position: absolute;
+  width: 90%;
+  height: 95%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  padding: 15px;
+  background: $color3;
+  z-index: 90;
+  transition: 0.5s;
+  @include media(xs){
+    position: relative;
+    width: 100%;
+    height: 450px;
+  }
+}
+.card-h:hover .card-info {
+  left: 100%;
+  @include media(xs){
+    left: 0;
+  }
+}
+
+.card-info .head-mkt {
+  padding: 5px 0;
+  border: 5px solid transparent;
+  border-image: $botones 1;
+  @include media(xs){
+    padding: 0;
+    border: 2px solid transparent;
+    border-image: $botones 1;
+  }
+}
+
+.card-info .head-mkt .mkt-titulo {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: $color1;
+  padding: 10px;
+  @include media(xs){
+    padding: 0;
+    font-size: 15px;
+  }
+}
+
+.card-info .head-mkt .description {
+  display: flex;
+  gap: 10px;
+}
+.card-info .description .mkt-item p {
+  padding-top: 10px;
+  display: flex;
+  font-size: 15px;
+  line-height: normal;
+}
+.card-info .description .mkt-item i {
+  font-size: 25px;
+  color: $color13;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include media(xs){
+    font-size: 15px;
+  }
+}
+

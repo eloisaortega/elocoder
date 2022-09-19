@@ -40,7 +40,8 @@
 
 .contenedor-grid1 h1 {
   font-size: 30px;
-  font-family: tango;
+  font-family: $font;
+  font: 900;
   color: $color21;
   align-items: center;
   position: relative;

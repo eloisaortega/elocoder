@@ -12,11 +12,18 @@
   }
   
   .contenedor-port1 {
+    font-family: $font;
+    font-size: 40px;
     margin: 0;
     background: $color12;
     color: $color3;
     padding-top: 20px;
     padding-bottom: 20px;
+
+    h3{
+      font-size: 40px;
+      text-align: center;
+    }
   }
   
   .container-fluid {
@@ -46,6 +53,8 @@
       opacity: 0.85;
      }
     h1 {
+      font-family: $font;
+      font: bold;
       color: $color3;
     }
     .col {
@@ -75,4 +84,29 @@
   .be-h:hover {
     color: $color4;
   }
+
+  .btn-primary {
+    background-color: map-get($map: $colores, $key: primero);
+    @include cardbtn;
+}
+.btn-2 {
+  background-color: map-get($map: $colores, $key: segundo);
+  @include cardbtn;
+}
+.btn-3 {
+  background-color: map-get($map: $colores, $key: tercero);
+  @include cardbtn;
+}
+.btn-4 {
+  background-color: map-get($map: $colores, $key: cuarto);
+  @include cardbtn;
+}
+.btn-5 {
+  background-color: map-get($map: $colores, $key: quinto);
+  @include cardbtn;
+}
+.btn-6 {
+  background-color: map-get($map: $colores, $key: sexto);
+  @include cardbtn;
+}
   

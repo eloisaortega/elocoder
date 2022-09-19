@@ -4,7 +4,6 @@
 @import "../bases/maps";
 @import "../bases/variables";
 
-
 @font-face {
   font-family: tango;
   src: url(/css/tangobold.ttf);
@@ -77,10 +76,10 @@ body {
 #hero {
   min-height: 100vh;
   position: relative;
-  @include media(xs){
+  @include media(xs) {
     min-height: 70vh;
   }
-  @include media(sm){
+  @include media(sm) {
     min-height: 70vh;
   }
 
@@ -98,7 +97,7 @@ body {
     margin-left: 140px;
     position: relative;
     z-index: 2;
-    @include media(xs){
+    @include media(xs) {
       padding-top: 0;
       margin-left: 60px;
       margin-top: 100px;
@@ -109,7 +108,6 @@ body {
       margin-top: 0;
       margin-bottom: 0;
       margin-left: 100px;
-
     }
   }
   video {
@@ -121,7 +119,7 @@ body {
     object-fit: cover;
     opacity: 0.9;
   }
-  
+
   h1 {
     font-size: 20px;
     display: block;
@@ -153,11 +151,10 @@ body {
     @include media(sm) {
       font-size: 60px;
     }
-    @include media(md){
+    @include media(md) {
       font-size: 80px;
     }
   }
-
 }
 .vertical {
   z-index: 2;
@@ -166,45 +163,44 @@ body {
   border-image: $botones 1;
 
   margin: 0;
-  @include media(xs){
+  @include media(xs) {
     min-height: 70vh;
   }
 }
-  a .vertical {
-    position: relative;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: $color3;
-    font-weight: 300;
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    padding: 30px;
+a .vertical {
+  position: relative;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $color3;
+  font-weight: 300;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  padding: 30px;
+  z-index: 2;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 8px;
+  &:hover {
+    color: $color12;
+    text-shadow: 2px 2px 0 $color22;
+    transform: scale(1.1);
+    box-shadow: 13px 15px 35px $color15;
+    font-family: tango;
     z-index: 2;
-    height: 100vh;
-    text-align: center;
-    justify-content: center;
-    letter-spacing: 8px;
-    &:hover {
-      color: $color12;
-      text-shadow: 2px 2px 0 black;
-      transform: scale(1.1);
-      box-shadow: 13px 15px 35px $color15;
-      font-family: tango;
-      z-index: 2;
-    }
-    @include media(xs){
-      height: 70vh;
-      width: 10%;
-      justify-content: center;
-      text-align: center;
-      align-items: center;
-    }
-    @include media(sm){
-      height: 70vh;
-    }
   }
-
+  @include media(xs) {
+    height: 70vh;
+    width: 10%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  @include media(sm) {
+    height: 70vh;
+  }
+}
 
 #btimpul {
   background-color: $color11;
@@ -224,7 +220,6 @@ body {
     border-radius: 20px;
     width: 250px;
     margin-left: 20px;
-
   }
   @include media(sm) {
     font-size: 15px;
@@ -240,15 +235,18 @@ body {
   }
 }
 /* servicios index.html */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&display=swap");
 .titulo {
-  font-family: 'Montserrat', sans-serif ;
+  font-family: $font;
   color: $color1;
   font-size: 30px;
   text-align: center;
   margin-bottom: 50px;
   animation: shakeX;
   animation-duration: 8s;
+  @include media(xs) {
+  margin-bottom: 20px;
+  }
 }
 
 .titulo-1 {
@@ -260,117 +258,102 @@ body {
 }
 
 #services1 {
-  height: 70vh;
+  background-color: $color3;
   padding-top: 30px;
+  margin: 0;
+  height: 100vh;
+}
+#services1 .contenservice {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @include media(xs) {
-    height: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
+    flex-wrap: wrap;
+    padding-top: 10px;
+  }
+}
+#services1 .img-container {
+  background-image: url("/assets/cards/marketing.jpg");
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  padding-bottom: 20px;
+  border-radius: 20px 20px;
+  box-shadow: 5px 5px 8px $color15;
+  margin: 20px;
+  opacity: 0.9;
+  justify-content: center;
+  align-items: center;
+  @include media(xs) {
+    width: 200px;
+    height: 200px;
   }
   @include media(sm) {
-    height: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 300px;
+    height: 300px;
+    margin: 40px;
+  }
+  @include media(md) {
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+  }
+  @include media(lg) {
+    width: 400px;
+    height: 400px;
+    margin: 100px;
   }
 }
 
+#services1 .item {
+  text-shadow: 5px 5px 8px $color15;
+  width: 100%;
+  padding: 0 30px;
+  color: $color1;
+  @include media(xs) {
+    font-size: 20px;
+  }
+  @include media(sm) {
+    font-size: 25px;
+    padding: 0 60px;
+  }
+  @include media(md) {
+    font-size: 25px;
+    padding: 0 60px;
+  }
+  @include media(lg) {
+    font-size: 35px;
+    padding: 0 80px;
+  }
+}
+
+.contenservice .lista-container {
+  text-align: initial;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contenservice .lista-container {
+  @include media(xs) {
+
+    padding: 40px;
+    font-size: 20px;
+  }
+}
+
+#services1 .lista-container ul li{
+  list-style-image: url("/assets/bullet/bullet.png");
+  box-shadow: 5px 5px 8px $color15;
+}
+li{
+  margin-top: 8px;
+  line-height: 1.8;
+}
 .contenedor {
   margin: auto;
   overflow: hidden;
   background-color: $color3;
-}
-
-.contenedor-serv {
-  align-items: center;
-  margin: auto;
-  overflow: hidden;
-  background-color: $color3;
-}
-
-.display-serv {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-}
-.display-serv:hover p {
-  transform: scale(1);
-}
-
-.serv-box {
-  align-items: center;
-  width: 200px;
-  margin-bottom: 10px;
-  height: 200px;
-  position: relative;
-  cursor: pointer;
-  text-align: center;
-  flex-wrap: wrap;
-  &.serv-box:hover {
-    transform: scale(1.1);
-    box-shadow: 13px 15px 35px $color15;
-  }
-  p {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    transform: scale(0);
-    transition: transform 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: $color13;
-    font: bold;
-  }
-  .p-1 {
-    color: map-get($map: $colores, $key: "primero");
-    font-family: tango;
-    font-size: 20px;
-    text-shadow: 2px 2px 0 $color21;
-    text-align: center;
-  }
-  .p-2 {
-      color: map-get($map: $colores, $key: "segundo");
-      font-family: tango;
-      font-size: 20px;
-      text-shadow: 2px 2px 0 $color21;
-      text-align: center;
-    }
-    .p-3 {
-      color: map-get($map: $colores, $key: "tercero");
-      font-family: tango;
-      font-size: 20px;
-      text-shadow: 2px 2px 0 $color21;
-      text-align: center;
-    }
-    .p-4 {
-      color: map-get($map: $colores, $key: "cuarto");
-      font-family: tango;
-      font-size: 20px;
-      text-shadow: 2px 2px 0 $color21;
-      text-align: center;
-    }
-}
-
-.serv-box > img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  padding-bottom: 20px;
-  border-radius: 20px 20px;
-  box-shadow: 0 0 5px $color15;
-  padding: 0;
-  opacity: 0.6;
-  
-}
-
-.contendor-servi {
-  background: $color12;
 }
 
 /* portfolio index carousel */

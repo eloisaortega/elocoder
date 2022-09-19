@@ -284,7 +284,7 @@ a .vertical {
 }
 a .vertical:hover {
   color: rgb(224, 218, 218);
-  text-shadow: 2px 2px 0 black;
+  text-shadow: 2px 2px 0 rgb(195, 194, 202);
   transform: scale(1.1);
   box-shadow: 13px 15px 35px rgb(14, 18, 53);
   font-family: tango;
@@ -343,7 +343,7 @@ a .vertical:hover {
 
 /* servicios index.html */
 .titulo {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open sans";
   color: ivory;
   font-size: 30px;
   text-align: center;
@@ -352,6 +352,11 @@ a .vertical:hover {
           animation: shakeX;
   -webkit-animation-duration: 8s;
           animation-duration: 8s;
+}
+@media (max-width: 767px) {
+  .titulo {
+    margin-bottom: 20px;
+  }
 }
 
 .titulo-1 {
@@ -363,122 +368,124 @@ a .vertical:hover {
 }
 
 #services1 {
-  height: 70vh;
+  background-color: #282d78;
   padding-top: 30px;
+  margin: 0;
+  height: 100vh;
+}
+
+#services1 .contenservice {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 767px) {
-  #services1 {
-    height: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
+  #services1 .contenservice {
+    flex-wrap: wrap;
+    padding-top: 10px;
+  }
+}
+
+#services1 .img-container {
+  background-image: url("/assets/cards/marketing.jpg");
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  padding-bottom: 20px;
+  border-radius: 20px 20px;
+  box-shadow: 5px 5px 8px rgb(14, 18, 53);
+  margin: 20px;
+  opacity: 0.9;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  #services1 .img-container {
+    width: 200px;
+    height: 200px;
   }
 }
 @media (min-width: 767px) and (max-width: 1023px) {
-  #services1 {
-    height: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
+  #services1 .img-container {
+    width: 300px;
+    height: 300px;
+    margin: 40px;
   }
+}
+@media (min-width: 1023px) and (max-width: 1440px) {
+  #services1 .img-container {
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 2800px) {
+  #services1 .img-container {
+    width: 400px;
+    height: 400px;
+    margin: 100px;
+  }
+}
+
+#services1 .item {
+  text-shadow: 5px 5px 8px rgb(14, 18, 53);
+  width: 100%;
+  padding: 0 30px;
+  color: ivory;
+}
+@media (max-width: 767px) {
+  #services1 .item {
+    font-size: 20px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #services1 .item {
+    font-size: 25px;
+    padding: 0 60px;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1440px) {
+  #services1 .item {
+    font-size: 25px;
+    padding: 0 60px;
+  }
+}
+@media (min-width: 1440px) and (max-width: 2800px) {
+  #services1 .item {
+    font-size: 35px;
+    padding: 0 80px;
+  }
+}
+
+.contenservice .lista-container {
+  text-align: initial;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 767px) {
+  .contenservice .lista-container {
+    padding: 40px;
+    font-size: 20px;
+  }
+}
+
+#services1 .lista-container ul li {
+  list-style-image: url("/assets/bullet/bullet.png");
+  box-shadow: 5px 5px 8px rgb(14, 18, 53);
+}
+
+li {
+  margin-top: 8px;
+  line-height: 1.8;
 }
 
 .contenedor {
   margin: auto;
   overflow: hidden;
   background-color: #282d78;
-}
-
-.contenedor-serv {
-  align-items: center;
-  margin: auto;
-  overflow: hidden;
-  background-color: #282d78;
-}
-
-.display-serv {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.display-serv:hover p {
-  transform: scale(1);
-}
-
-.serv-box {
-  align-items: center;
-  width: 200px;
-  margin-bottom: 10px;
-  height: 200px;
-  position: relative;
-  cursor: pointer;
-  text-align: center;
-  flex-wrap: wrap;
-}
-.serv-box.serv-box:hover {
-  transform: scale(1.1);
-  box-shadow: 13px 15px 35px rgb(14, 18, 53);
-}
-.serv-box p {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  transform: scale(0);
-  transition: transform 0.5s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: rgb(226, 43, 134);
-  font: bold;
-}
-.serv-box .p-1 {
-  color: rgb(211, 43, 133);
-  font-family: tango;
-  font-size: 20px;
-  text-shadow: 2px 2px 0 black;
-  text-align: center;
-}
-.serv-box .p-2 {
-  color: blue;
-  font-family: tango;
-  font-size: 20px;
-  text-shadow: 2px 2px 0 black;
-  text-align: center;
-}
-.serv-box .p-3 {
-  color: rgb(132, 34, 132);
-  font-family: tango;
-  font-size: 20px;
-  text-shadow: 2px 2px 0 black;
-  text-align: center;
-}
-.serv-box .p-4 {
-  color: rgb(70, 48, 121);
-  font-family: tango;
-  font-size: 20px;
-  text-shadow: 2px 2px 0 black;
-  text-align: center;
-}
-
-.serv-box > img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block;
-  padding-bottom: 20px;
-  border-radius: 20px 20px;
-  box-shadow: 0 0 5px rgb(14, 18, 53);
-  padding: 0;
-  opacity: 0.6;
-}
-
-.contendor-servi {
-  background: rgb(224, 218, 218);
 }
 
 /* portfolio index carousel */
@@ -759,7 +766,8 @@ a .vertical:hover {
 
 .contenedor-grid1 h1 {
   font-size: 30px;
-  font-family: tango;
+  font-family: "Open sans";
+  font: 900;
   color: black;
   align-items: center;
   position: relative;
@@ -827,11 +835,17 @@ a .vertical:hover {
 }
 
 .contenedor-port1 {
+  font-family: "Open sans";
+  font-size: 40px;
   margin: 0;
   background: rgb(224, 218, 218);
   color: #282d78;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.contenedor-port1 h3 {
+  font-size: 40px;
+  text-align: center;
 }
 
 .container-fluid {
@@ -861,6 +875,8 @@ a .vertical:hover {
   opacity: 0.85;
 }
 .container-fluid h1 {
+  font-family: "Open sans";
+  font: bold;
   color: #282d78;
 }
 .container-fluid .col {
@@ -888,6 +904,48 @@ a .vertical:hover {
 
 .be-h:hover {
   color: #b66ad6;
+}
+
+.btn-primary {
+  background-color: rgb(218, 71, 149);
+  color: ivory;
+  border-color: #282d78;
+  text-shadow: 5px 5px 8px rgb(14, 18, 53);
+}
+
+.btn-2 {
+  background-color: rgb(39, 39, 110);
+  color: ivory;
+  border-color: #282d78;
+  text-shadow: 5px 5px 8px rgb(14, 18, 53);
+}
+
+.btn-3 {
+  background-color: rgb(132, 34, 132);
+  color: ivory;
+  border-color: #282d78;
+  text-shadow: 5px 5px 8px rgb(14, 18, 53);
+}
+
+.btn-4 {
+  background-color: rgb(70, 48, 121);
+  color: ivory;
+  border-color: #282d78;
+  text-shadow: 5px 5px 8px rgb(14, 18, 53);
+}
+
+.btn-5 {
+  background-color: rgb(228, 224, 94);
+  color: ivory;
+  border-color: #282d78;
+  text-shadow: 5px 5px 8px rgb(14, 18, 53);
+}
+
+.btn-6 {
+  background-color: rgb(207, 55, 96);
+  color: ivory;
+  border-color: #282d78;
+  text-shadow: 5px 5px 8px rgb(14, 18, 53);
 }
 
 /* contacto.html */
@@ -1202,26 +1260,27 @@ a .vertical:hover {
   line-height: 40px;
 }
 .textmkt h1 {
-  font-family: tango;
+  font-family: "Open sans";
+  font: 900;
   color: #282d78;
 }
 .textmkt h2 {
-  font-family: biko;
+  font-family: "Open sans";
   color: rgb(226, 43, 134);
 }
 .textmkt h3 {
-  font-family: biko;
-  color: rgb(14, 18, 53);
-  text-align: left;
+  font-family: "Open sans";
+  color: #282d78;
+  text-align: center;
   font-size: 25px;
 }
 .textmkt h4 {
   color: rgb(226, 43, 134);
-  font-family: biko;
+  font-family: "Open sans";
 }
 .textmkt h5 {
   color: magenta;
-  font-family: biko;
+  font-family: "Open sans";
   font-size: 15px;
 }
 
@@ -1284,7 +1343,8 @@ a .vertical:hover {
   height: 150px;
   overflow: hidden;
   position: absolute;
-  box-shadow: 0 0 20px hsla(286deg, 48%, 45%, 0.5);
+  box-shadow: 0 0 20px #2d2b8b;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -1386,7 +1446,8 @@ a .vertical:hover {
   height: 150px;
   overflow: hidden;
   position: absolute;
-  box-shadow: 0 0 20px hsla(286deg, 48%, 45%, 0.5);
+  box-shadow: 0 0 20px #2d2b8b;
+  border-radius: 10px;
   cursor: pointer;
 }
 
@@ -1474,13 +1535,14 @@ a .vertical:hover {
 }
 
 .estrategias1 {
-  color: hsla(286deg, 48%, 45%, 0.5);
+  color: #282d78;
 }
 
 strong {
   color: #282d78;
   font: 900;
   font-family: tango;
+  text-transform: uppercase;
 }
 
 .contenedor3d:hover {
@@ -1491,6 +1553,286 @@ strong {
 .carrusel3d:hover {
   transform: scale(1.1);
   overflow: hidden;
+}
+
+/* acordeon desplegable */
+#body1 {
+  margin: 0 auto;
+  background: rgb(224, 218, 218);
+  display: block;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+}
+@media (min-width: 1440px) and (max-width: 2800px) {
+  #body1 {
+    height: 70vh;
+  }
+}
+
+div.contenedor-ventajas {
+  justify-content: center;
+  align-items: center;
+}
+
+div.subapartado {
+  margin: auto;
+  width: 400px;
+  min-height: 50px;
+  background-color: #282d78;
+}
+@media (min-width: 1440px) and (max-width: 2800px) {
+  div.subapartado {
+    width: 700px;
+  }
+}
+
+div.subapartado:hover div.info1 {
+  height: 240px;
+}
+
+div.titulo-ventajas {
+  margin: auto;
+  width: 400px;
+  height: 50px;
+  background-color: #282d78;
+  border: 5px solid transparent;
+  -o-border-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%) 1;
+     border-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%) 1;
+  overflow: hidden;
+}
+@media (min-width: 1440px) and (max-width: 2800px) {
+  div.titulo-ventajas {
+    width: 700px;
+  }
+}
+
+p.titulo-ventajas {
+  text-align: center;
+  margin: 10px;
+  color: ivory;
+}
+
+div.info1 {
+  width: 400px;
+  height: 0px;
+  background-color: #282d78;
+  overflow: hidden;
+  transition: height 0.2s;
+}
+@media (min-width: 1440px) and (max-width: 2800px) {
+  div.info1 {
+    width: 700px;
+  }
+}
+
+p.info1 {
+  color: ivory;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+div.contenedor-mkt {
+  margin: 20px;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #282d78;
+}
+div.contenedor-mkt h2 {
+  font-size: 35px;
+}
+div.contenedor-mkt p {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  div.contenedor-mkt {
+    display: block;
+  }
+}
+
+/* marketing digital */
+/* card horizontal hover */
+#body3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(224, 218, 218);
+  height: 100vh;
+}
+@media (max-width: 767px) {
+  #body3 {
+    display: flex;
+    padding-bottom: 700px;
+    padding-top: 150px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  #body3 {
+    margin-top: 100px;
+    display: block;
+    margin-left: 50px;
+    height: 70vh;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1440px) {
+  #body3 {
+    margin-top: 100px;
+    display: block;
+    margin-left: 150px;
+    height: 80vh;
+  }
+}
+@media (min-width: 1440px) and (max-width: 2800px) {
+  #body3 {
+    margin-top: 100px;
+    display: block;
+    margin-left: 300px;
+    height: 80vh;
+  }
+}
+
+.card-h {
+  color: ivory;
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+@media (max-width: 767px) {
+  .card-h {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  .card-h {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1440px) {
+  .card-h {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+.card-h .card-landing {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 10px black;
+  background: linear-gradient(-180deg, transparent 80%, #231557), var(--i);
+  background-position: cover;
+  background-size: cover;
+  z-index: 100;
+}
+
+.card-h .card-landing a {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  font-size: 25px;
+  color: ivory;
+}
+@media (max-width: 767px) {
+  .card-h .card-landing a {
+    color: #282d78;
+  }
+}
+
+.card-h .card-info {
+  position: absolute;
+  width: 90%;
+  height: 95%;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  padding: 15px;
+  background: #282d78;
+  z-index: 90;
+  transition: 0.5s;
+}
+@media (max-width: 767px) {
+  .card-h .card-info {
+    position: relative;
+    width: 100%;
+    height: 450px;
+  }
+}
+
+.card-h:hover .card-info {
+  left: 100%;
+}
+@media (max-width: 767px) {
+  .card-h:hover .card-info {
+    left: 0;
+  }
+}
+
+.card-info .head-mkt {
+  padding: 5px 0;
+  border: 5px solid transparent;
+  -o-border-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%) 1;
+     border-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%) 1;
+}
+@media (max-width: 767px) {
+  .card-info .head-mkt {
+    padding: 0;
+    border: 2px solid transparent;
+    -o-border-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%) 1;
+       border-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%) 1;
+  }
+}
+
+.card-info .head-mkt .mkt-titulo {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: ivory;
+  padding: 10px;
+}
+@media (max-width: 767px) {
+  .card-info .head-mkt .mkt-titulo {
+    padding: 0;
+    font-size: 15px;
+  }
+}
+
+.card-info .head-mkt .description {
+  display: flex;
+  gap: 10px;
+}
+
+.card-info .description .mkt-item p {
+  padding-top: 10px;
+  display: flex;
+  font-size: 15px;
+  line-height: normal;
+}
+
+.card-info .description .mkt-item i {
+  font-size: 25px;
+  color: rgb(226, 43, 134);
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .card-info .description .mkt-item i {
+    font-size: 15px;
+  }
 }
 
 /* politicas.html */
@@ -1527,7 +1869,7 @@ strong {
 
 /* cards extend */
 .ucard {
-  background-color: gray;
+  background-color: rgb(224, 218, 218);
   width: 300px;
 }
 /* map */
