@@ -467,8 +467,9 @@ a .vertical:hover {
 
 @media (max-width: 767px) {
   .contenservice .lista-container {
-    padding: 40px;
-    font-size: 20px;
+    display: flex;
+    padding: 20px;
+    font-size: 15px;
   }
 }
 
@@ -481,11 +482,10 @@ li {
   margin-top: 8px;
   line-height: 1.8;
 }
-
-.contenedor {
-  margin: auto;
-  overflow: hidden;
-  background-color: #282d78;
+@media (max-width: 767px) {
+  li {
+    display: flex;
+  }
 }
 
 /* portfolio index carousel */
@@ -506,6 +506,12 @@ li {
 }
 
 /* NUESTROS CLIENTES INDEX.HTTML  */
+.contenedor {
+  margin: auto;
+  overflow: hidden;
+  background-color: #282d78;
+}
+
 .contenedor-cientes {
   align-items: center;
   margin: auto;
@@ -1552,11 +1558,6 @@ strong {
 .contenedor3d:hover {
   transform: scale(1.1);
   overflow: hidden;
-}
-@media (max-width: 767px) {
-  .contenedor3d:hover {
-    width: 200px;
-  }
 }
 
 .carrusel3d:hover {

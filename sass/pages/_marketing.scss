@@ -232,9 +232,7 @@ strong {
 .contenedor3d:hover {
   transform: scale(1.1);
   overflow: hidden;
-  @include media(xs) {
-    width: 200px;
-  }
+
 }
 .carrusel3d:hover {
   transform: scale(1.1);

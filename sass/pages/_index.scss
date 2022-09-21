@@ -336,9 +336,9 @@ a .vertical {
 }
 .contenservice .lista-container {
   @include media(xs) {
-
-    padding: 40px;
-    font-size: 20px;
+    display: flex;
+    padding: 20px;
+    font-size: 15px;
   }
 }
 
@@ -349,12 +349,12 @@ a .vertical {
 li{
   margin-top: 8px;
   line-height: 1.8;
+  @include media(xs) {
+    display: flex;
+  }
 }
-.contenedor {
-  margin: auto;
-  overflow: hidden;
-  background-color: $color3;
-}
+
+
 
 /* portfolio index carousel */
 
@@ -373,7 +373,11 @@ li{
 }
 
 /* NUESTROS CLIENTES INDEX.HTTML  */
-
+.contenedor {
+  margin: auto;
+  overflow: hidden;
+  background-color: $color3;
+}
 .contenedor-cientes {
   align-items: center;
   margin: auto;
