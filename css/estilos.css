@@ -1216,6 +1216,10 @@ li {
   font-family: biko;
   src: url(css/Biko.otf);
 }
+.main1 {
+  overflow: hidden;
+}
+
 .h-ani {
   color: blueviolet;
   font-size: 40px;
@@ -1525,10 +1529,26 @@ strong {
   transform: scale(1.1);
   overflow: hidden;
 }
+@media (max-width: 767px) {
+  .contenedor3d:hover {
+    width: 200px;
+  }
+}
 
 .carrusel3d:hover {
   transform: scale(1.1);
   overflow: hidden;
+}
+@media (max-width: 767px) {
+  .carrusel3d:hover {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 767px) {
+  section.carrusel3d {
+    overflow: hidden;
+  }
 }
 
 /* acordeon desplegable */
@@ -1557,6 +1577,11 @@ div.subapartado {
   min-height: 50px;
   background-color: #282d78;
 }
+@media (max-width: 767px) {
+  div.subapartado {
+    width: 300px;
+  }
+}
 @media (min-width: 1440px) and (max-width: 2800px) {
   div.subapartado {
     width: 700px;
@@ -1564,7 +1589,7 @@ div.subapartado {
 }
 
 div.subapartado:hover div.info1 {
-  height: 240px;
+  height: 310px;
 }
 
 div.titulo-ventajas {
@@ -1575,6 +1600,11 @@ div.titulo-ventajas {
   border: 5px solid transparent;
   border-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%) 1;
   overflow: hidden;
+}
+@media (max-width: 767px) {
+  div.titulo-ventajas {
+    width: 300px;
+  }
 }
 @media (min-width: 1440px) and (max-width: 2800px) {
   div.titulo-ventajas {
@@ -1594,6 +1624,11 @@ div.info1 {
   background-color: #282d78;
   overflow: hidden;
   transition: height 0.2s;
+}
+@media (max-width: 767px) {
+  div.info1 {
+    width: 300px;
+  }
 }
 @media (min-width: 1440px) and (max-width: 2800px) {
   div.info1 {
