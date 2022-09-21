@@ -251,7 +251,6 @@ section.carrusel3d{
   margin: 0 auto;
   background: $color12;
   display: block;
-  height: 100vh;
   overflow: hidden;
   justify-content: center;
   @include media(lg) {
@@ -261,6 +260,8 @@ section.carrusel3d{
 div.contenedor-ventajas{
   justify-content: center;
   align-items: center;
+  display: grid;
+  min-height: 100%;
 
 }
 div.subapartado {
